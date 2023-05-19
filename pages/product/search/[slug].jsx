@@ -47,7 +47,7 @@ const ProductSearchResult = () => {
           }}
         >
           <Box>
-            <H5>Searching for “ mobile phone ”</H5>
+            <H5>Searching for “ Shoes ”</H5>
             <Paragraph color="grey.600">48 results found</Paragraph>
           </Box>
 
@@ -59,7 +59,7 @@ const ProductSearchResult = () => {
           >
             <FlexBox alignItems="center" gap={1} flex="1 1 0">
               <Paragraph color="grey.600" whiteSpace="pre">
-                Short by:
+                Sort by:
               </Paragraph>
 
               <TextField
