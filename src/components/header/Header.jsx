@@ -100,11 +100,7 @@ const Header = ({ isFixed, className, searchInput }) => {
 
             {/* MIDDLE CONTENT - LOGO */}
             <Link href="/">
-              <Image
-                height={44}
-                src="/assets/images/logo.png"
-                alt="logo"
-              />
+              <Image height={44} src="/assets/images/logo.png" alt="logo" />
             </Link>
 
             {/* RIGHT CONTENT - LOGIN, CART, SEARCH BUTTON */}
@@ -165,7 +161,7 @@ const Header = ({ isFixed, className, searchInput }) => {
       <StyledContainer>
         {/* LEFT CONTENT - LOGO AND CATEGORY */}
         <FlexBox mr={2} minWidth="170px" alignItems="center">
-        <Link href="/">
+          <Link href="/">
             <Image height={44} src="/assets/images/logo2.svg" alt="logo" />
           </Link>
 
