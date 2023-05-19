@@ -127,7 +127,7 @@ const categories = [
     value: "*",
   },
   {
-    title: "Women(s shoes",
+    title: "Women's shoes",
     value: "*",
   },
 ];
