@@ -165,8 +165,8 @@ const Header = ({ isFixed, className, searchInput }) => {
       <StyledContainer>
         {/* LEFT CONTENT - LOGO AND CATEGORY */}
         <FlexBox mr={2} minWidth="170px" alignItems="center">
-          <Link href="/">
-          
+        <Link href="/">
+            <Image height={44} src="/assets/images/logo2.svg" alt="logo" />
           </Link>
 
           {/* SHOW DROP DOWN CATEGORY BUTTON WHEN HEADER FIXED */}
