@@ -100,7 +100,7 @@ const Header = ({ isFixed, className, searchInput }) => {
 
             {/* MIDDLE CONTENT - LOGO */}
             <Link href="/">
-              <Image height={44} src="/assets/images/logo.png" alt="logo" />
+              <Image height={44} src="/assets/images/logo.svg" alt="logo" />
             </Link>
 
             {/* RIGHT CONTENT - LOGIN, CART, SEARCH BUTTON */}
