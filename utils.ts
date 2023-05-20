@@ -1,6 +1,4 @@
-// utils.ts
 
-import getConfig from 'next/config';
 
 export function currency(price: number, fraction: number = 2): string {
   const { publicRuntimeConfig } = getConfig() as {
