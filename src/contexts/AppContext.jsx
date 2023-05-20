@@ -12,7 +12,7 @@ const INITIAL_CART = [
     name: "Flow White",
     id: "6e8f151b-277b-4465-97b6-547f6a72e5c9",
     imgUrl:
-      "/assets/images/products/Fashion/Shoes/11.FlowWhite.png",
+      "/assets/images/products/Fashion/Shoes/11.Flowwhite.png",
   },
   {
     qty: 1,
