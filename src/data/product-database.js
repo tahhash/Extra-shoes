@@ -1461,7 +1461,7 @@ export default [
         instagram: null,
       },
     },
-    title: "Capgnold WX-R",
+    title: "RED Nike",
     brand: null,
     price: 8,
     size: null,
