@@ -62,7 +62,7 @@ const PaymentMethods = () => {
             </Card>
 
             <H5 whiteSpace="pre" m={0.75}>
-              Ralf Edward
+              Hichem Tahar
             </H5>
           </FlexBox>
 
@@ -99,12 +99,6 @@ const PaymentMethods = () => {
 const paymentMethods = [
   {
     id: "1050017AS",
-    exp: "08 / 2022",
-    payment_method: "Amex",
-    card_no: "1234 **** **** ****",
-  },
-  {
-    id: "1050017AS",
     exp: "10 / 2025",
     payment_method: "Mastercard",
     card_no: "1234 **** **** ****",
@@ -113,13 +107,7 @@ const paymentMethods = [
     id: "1050017AS",
     exp: "N/A",
     payment_method: "PayPal",
-    card_no: "ui-lib@email.com",
-  },
-  {
-    id: "1050017AS",
-    exp: "08 / 2022",
-    payment_method: "Visa",
-    card_no: "1234 **** **** ****",
+    card_no: "Tahh.hashh@gmail.com",
   },
 ];
 export default PaymentMethods;
