@@ -12,15 +12,22 @@ const Section1 = () => {
       sx={{
         pt: "1rem",
         mb: "4rem",
+        background:
+          "linear-gradient(to right, #3A4657 0%, #2B3442 50%, #3A4657 100%)",
       }}
     >
       {/* GRIDS */}
       <Grid container spacing={1.5}>
-      <div>
-      <h2>اعثر على المقاس المثالي لقدميك!</h2>
-      <img src="./public/homepage.jpg" alt="Your Image" />
-    </div>
+        <div>
+          <h2 style={{ color: "white" }}>اعثر على المقاس المثالي لقدميك!</h2>
+          <img
+            src="/public/homepage.jpg"
+            alt="Your Image"
+            style={{ width: "100%" }}
+          />
+        </div>
       </Grid>
+
       {/* END GRIDS */}
 
       <Box mb="1.5rem" />
