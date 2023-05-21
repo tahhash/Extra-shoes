@@ -16,15 +16,10 @@ const Section1 = () => {
     >
       {/* GRIDS */}
       <Grid container spacing={1.5}>
-        <Grid item lg={4} md={5} xs={12}>
-          <ShowcaseCard1 />
-        </Grid>
-
-        <Grid item lg={8} md={7} xs={12}>
-          <ShowcaseCard2 />
-          <Box mt=".75rem" />
-          <ShowcaseCard3 />
-        </Grid>
+      <div>
+      <h2>اعثر على المقاس المثالي لقدميك!</h2>
+      <img src="./public/homepage.jpg" alt="Your Image" />
+    </div>
       </Grid>
       {/* END GRIDS */}
 
