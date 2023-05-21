@@ -59,20 +59,10 @@ function calculateDiscount(price, discount) {
  */
 
 function currency(price, fraction = 2) {
-  const formatCurrency = currencyJs(price).format({
-    precision: fraction,
-  });
+  const formatCurrency =currencyJs(price).format({precision: fraction,symbol:"DZD"});
   return formatCurrency;
-
-  // const { publicRuntimeConfig } = getConfig();
-  // const formatCurrency = new Intl.NumberFormat(undefined, {
-  //   style: "currency",
-  //   currency: publicRuntimeConfig.currency,
-  //   maximumFractionDigits: fraction,
-  //   minimumFractionDigits: fraction,
-  // });
-
-  // return formatCurrency.format(price);
 }
+
+
 
 export { renderProductCount, calculateDiscount, currency, getDateDifference };
