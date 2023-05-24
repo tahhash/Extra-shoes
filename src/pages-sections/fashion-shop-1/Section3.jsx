@@ -16,7 +16,7 @@ const Section3 = ({ newArrivals }) => {
     else setVisibleSlides(6);
   }, [width]);
   return (
-    <CategorySectionCreator title="New Arrivals" seeMoreLink="#">
+    <CategorySectionCreator title="أحذية جديدة" seeMoreLink="#">
       <Carousel
         infinite={true}
         visibleSlides={visibleSlides}

@@ -33,7 +33,7 @@ const Section4 = ({ dealOfTheWeek }) => {
     },
   });
   return (
-    <CategorySectionCreator title="Deal Of The Week">
+    <CategorySectionCreator title="صفقة الأسبوع">
       <Box
         sx={{
           position: "relative",

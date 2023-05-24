@@ -7,7 +7,7 @@ import ProductCard3 from "components/product-cards/ProductCard3";
 const Section6 = ({ products }) => {
   const trendings = products.slice(1, products.length);
   return (
-    <CategorySectionCreator title="Trending Items">
+    <CategorySectionCreator title="العناصر الرائجة">
       <Grid container spacing={4}>
         <Grid item md={3} xs={12}>
           <ProductCard12

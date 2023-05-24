@@ -22,7 +22,7 @@ const Section2 = ({ flashDeals }) => {
   return (
     <CategorySectionCreator
       icon={<Light color="primary" />}
-      title="Flash Deals"
+      title="صفقات"
     >
       <Carousel
         infinite={true}

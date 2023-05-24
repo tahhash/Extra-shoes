@@ -36,6 +36,7 @@ const Section1 = () => {
           >
             اعثر على المقاس المثالي لقدميك
           </h2>
+        </div>
         <div
           style={{
             position: "absolute",
@@ -49,7 +50,6 @@ const Section1 = () => {
         >
           مجموعة ضخمة من الأحذية بمقاسات كبيرة
         </div>
-        </div>
       </Grid>
 
       {/* END GRIDS */}
@@ -60,27 +60,27 @@ const Section1 = () => {
         <Grid item md={3} sm={6} xs={12}>
           {/* SERVICE CARD */}
           <ShowcaseCard4
-            title="Secure Payment"
+            title="دفع آمن"
             Icon={CreditCardVerifiedIcon}
-            body="100% secured payment & privacy"
+            body="دفع مؤمّن وخصوصية %100"
           />
         </Grid>
 
         <Grid item md={3} sm={6} xs={12}>
           {/* SERVICE CARD */}
           <ShowcaseCard4
-            title="Great Feedback"
+            title="تقييم رائع"
             Icon={FeedbackThumbsUpIcon}
-            body="More than 97% positive & happy customers"
+            body="أكثر من 97% من العملاء راضون وسعداء"
           />
         </Grid>
 
         <Grid item md={6} xs={12}>
           {/* OFFER CARD */}
           <ShowcaseCard4
-            title="Easy Transactions"
+            title="عمليات سهلة"
             Icon={FeedbackThumbsUpIcon}
-            body="Quickly to your house!"
+            body="!بسرعة إلى باب منزلك"
           />
         </Grid>
       </Grid>
