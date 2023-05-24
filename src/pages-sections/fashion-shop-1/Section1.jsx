@@ -25,14 +25,13 @@ const Section1 = () => {
             style={{
               position: "absolute",
               top: "50%",
-              left: "50%",
+              left: "33.33%", // Updated left property
               transform: "translate(-50%, -50%)",
               color: "white",
               zIndex: 1,
               width: "100%",
               fontSize: "36px",
               fontWeight: "bold",
-              fontFamily: "Janna LT Bold, Arial, sans-serif",
             }}
           >
             اعثر على المقاس المثالي لقدميك!
