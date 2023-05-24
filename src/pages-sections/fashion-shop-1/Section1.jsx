@@ -11,8 +11,7 @@ const Section1 = () => {
         mb: "4rem",
       }}
     >
-      {/* GRIDS */}
-      <Grid container spacing={1.5}>
+      
         <div style={{ position: "relative", width: "100%", height: "100%" }}>
           <Image
             src="/homepage.jpg"
@@ -34,7 +33,6 @@ const Section1 = () => {
             اعثر على المقاس المثالي لقدميك!
           </h2>
         </div>
-      </Grid>
 
       {/* END GRIDS */}
 
