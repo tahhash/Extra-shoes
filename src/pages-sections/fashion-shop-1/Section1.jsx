@@ -2,7 +2,7 @@ import { Box, Container, Grid } from "@mui/material";
 import FeedbackThumbsUpIcon from "components/icons/FeedbackThumbsUp";
 import CreditCardVerifiedIcon from "components/icons/CreditCardVerified";
 import ShowcaseCard4 from "./showcase-cards/ShowcaseCard4";
-import Image from 'next/image';
+import Image from "next/image";
 const Section1 = () => {
   return (
     <Container
@@ -13,14 +13,13 @@ const Section1 = () => {
     >
       {/* GRIDS */}
       <Grid container spacing={1.5}>
-        
         <div style={{ position: "relative" }}>
           <Image
             src="/homepage.jpg"
             alt="Your Image"
-            layout="responsive"
-            width={1000}
-            height={500}
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
           />
           <h2
             style={{
