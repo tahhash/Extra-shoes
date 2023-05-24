@@ -1,30 +1,39 @@
 import { Box, Container, Grid } from "@mui/material";
 import FeedbackThumbsUpIcon from "components/icons/FeedbackThumbsUp";
 import CreditCardVerifiedIcon from "components/icons/CreditCardVerified";
-import ShowcaseCard1 from "./showcase-cards/ShowcaseCard1";
-import ShowcaseCard2 from "./showcase-cards/ShowcaseCard2";
-import ShowcaseCard3 from "./showcase-cards/ShowcaseCard3";
 import ShowcaseCard4 from "./showcase-cards/ShowcaseCard4";
-import ShowcaseCard5 from "./showcase-cards/ShowcaseCard5";
+import Image from 'next/image';
 const Section1 = () => {
   return (
     <Container
       sx={{
         pt: "1rem",
         mb: "4rem",
-        background:
-          "linear-gradient(to right, #3A4657 0%, #2B3442 50%, #3A4657 100%)",
       }}
     >
       {/* GRIDS */}
       <Grid container spacing={1.5}>
-        <div>
-          <h2 style={{ color: "white" }}>اعثر على المقاس المثالي لقدميك!</h2>
-          <img
-            src="/public/homepage.jpg"
+        
+        <div style={{ position: "relative" }}>
+          <Image
+            src="/homepage.jpg"
             alt="Your Image"
-            style={{ width: "100%" }}
+            layout="responsive"
+            width={1000}
+            height={500}
           />
+          <h2
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              color: "white",
+              zIndex: 1,
+            }}
+          >
+            اعثر على المقاس المثالي لقدميك!
+          </h2>
         </div>
       </Grid>
 
