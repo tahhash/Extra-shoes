@@ -2,6 +2,19 @@
 
 module.exports = {
   // i18n,
+  async headers() {
+    return [
+      {
+        source: '/fonts/(.*)',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+        ],
+      },
+    ];
+  },
   output: 'export',
   devIndicators: {},
   publicRuntimeConfig: {

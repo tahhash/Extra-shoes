@@ -13,13 +13,13 @@ const Section1 = () => {
     >
       {/* GRIDS */}
       <Grid container spacing={1.5}>
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative", textAlign: "center" }}>
           <Image
             src="/homepage.jpg"
             alt="Your Image"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            layout="responsive"
+            width={1600}
+            height={640}
           />
           <h2
             style={{
@@ -29,6 +29,10 @@ const Section1 = () => {
               transform: "translate(-50%, -50%)",
               color: "white",
               zIndex: 1,
+              width: "100%",
+              fontSize: "36px",
+              fontWeight: "bold",
+              fontFamily: "Janna LT Bold, Arial, sans-serif",
             }}
           >
             اعثر على المقاس المثالي لقدميك!
