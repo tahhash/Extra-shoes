@@ -12,7 +12,7 @@ const Section1 = () => {
       }}
     >
       {/* GRIDS */}
-      <Grid container spacing={1.5}>
+      <Grid>
         <div style={{ position: "relative", textAlign: "center" }}>
           <Image
             src="/homepage.jpg"
