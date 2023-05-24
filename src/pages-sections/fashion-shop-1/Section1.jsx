@@ -34,8 +34,21 @@ const Section1 = () => {
               fontWeight: "bold",
             }}
           >
-            اعثر على المقاس المثالي لقدميك!
+            اعثر على المقاس المثالي لقدميك
           </h2>
+        <div
+          style={{
+            position: "absolute",
+            bottom: "20px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            color: "black",
+            fontSize: "48px",
+            fontWeight: "bold",
+          }}
+        >
+          مجموعة ضخمة من الأحذية بمقاسات كبيرة
+        </div>
         </div>
       </Grid>
 
