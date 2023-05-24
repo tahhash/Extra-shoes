@@ -35,14 +35,13 @@ const Footer1 = () => {
           <Box py={10} overflow="hidden">
             <Grid container spacing={3}>
               <Grid item lg={4} md={6} sm={6} xs={12}>
-                
-
                 <Paragraph mb={2.5} color="grey.500">
-                  Welcome to Exxtra, the fashion hub for larger-than-life
-                  personalities. We offer stylish plus-size clothing, extra-wide
-                  shoes, and accessories for men and women. Our inclusive
-                  fashion promotes confidence with high-quality, trendy options.
-                  Explore your new wardrobe favorites today!
+                  مرحبًا بك في "إكسترا"، وجهتك النهائية لمقاسات الأحذية الكبيرة.
+                  نحن متخصصون في تقديم أحذية أنيقة للرجال والنساء ذوي الأقدام
+                  الكبيرة. تشمل تشكيلتنا الواسعة من الأحذية الكبيرة إضافة مضمونة
+                  للراحة والأناقة دون التنازل عن الجودة. استكشف مجموعتنا اليوم
+                  واعثر على الزوج المثالي الذي يتناسب مع أناقتك ومقاسك الفريد.
+                  اخطو نحو الثقة مع إكسترا!
                 </Paragraph>
               </Grid>
 
@@ -54,7 +53,7 @@ const Footer1 = () => {
                   lineHeight="1"
                   color="white"
                 >
-                  About Us
+                  حولنا
                 </Box>
 
                 <div>
@@ -74,7 +73,7 @@ const Footer1 = () => {
                   lineHeight="1"
                   color="white"
                 >
-                  Customer Care
+                  العناية بالعملاء
                 </Box>
 
                 <div>
@@ -94,7 +93,7 @@ const Footer1 = () => {
                   lineHeight="1"
                   color="white"
                 >
-                  Contact Us
+                  اتصل بنا
                 </Box>
 
                 <Box py={0.6} color="grey.500">
@@ -102,11 +101,11 @@ const Footer1 = () => {
                 </Box>
 
                 <Box py={0.6} color="grey.500">
-                  Email: tahh.hashh@gmail.com
+                البريد الإلكتروني: tahh.hashh@gmail.com
                 </Box>
 
                 <Box py={0.6} mb={2} color="grey.500">
-                  Phone: 0541 14 98 28
+                الهاتف: 0541 14 98 28
                 </Box>
 
                 <FlexBox className="flex" mx={-0.625}>
@@ -143,8 +142,8 @@ const Footer1 = () => {
     </footer>
   );
 };
-const aboutLinks = ["Terms & Conditions", "Privacy Policy"];
-const customerCareLinks = ["Help Center", "How to Buy", "Returns & Refunds"];
+const aboutLinks = ["الشروط والأحكام", "سياسة الخصوصية"];
+const customerCareLinks = ["مركز المساعدة", "كيفية الشراء", "الإرجاع والاسترداد"];
 const iconList = [
   {
     icon: Facebook,
