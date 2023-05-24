@@ -101,11 +101,11 @@ const Footer1 = () => {
                 </Box>
 
                 <Box py={0.6} color="grey.500">
-                البريد الإلكتروني: tahh.hashh@gmail.com
+                  email: tahh.hashh@gmail.com
                 </Box>
 
                 <Box py={0.6} mb={2} color="grey.500">
-                الهاتف: 0541 14 98 28
+                  phone: 0541 14 98 28
                 </Box>
 
                 <FlexBox className="flex" mx={-0.625}>

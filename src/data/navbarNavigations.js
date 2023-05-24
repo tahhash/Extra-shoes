@@ -4,127 +4,123 @@ import categoriesMegaMenu from "./categoriesMegaMenu";
 const megaMenus = [
   [
     {
-      title: "User Account",
+      title: "حساب المستخدم",
       child: [
         {
-          title: "Order List",
+          title: "قائمة الطلبات",
           url: "/orders",
         },
         {
-          title: "Order Details",
+          title: "تفاصيل الطلب",
           url: "/orders/f0ba538b-c8f3-45ce-b6c1-209cf07ba5f8",
         },
         {
-          title: "View Profile",
+          title: "عرض الملف الشخصي",
           url: "/profile",
         },
         {
-          title: "Edit Profile",
+          title: "تعديل الملف الشخصي",
           url: "/profile/e42e28ea-528f-4bc8-81fb-97f658d67d75",
         },
         {
-          title: "Address List",
+          title: "قائمة العناوين",
           url: "/address",
         },
         {
-          title: "Add Address",
+          title: "إضافة عنوان",
           url: "/address/d27d0e28-c35e-4085-af1e-f9f1b1bd9c34",
         },
         {
-          title: "All tickets",
+          title: "جميع التذاكر",
           url: "/support-tickets",
         },
         {
-          title: "Ticket details",
+          title: "تفاصيل التذكرة",
           url: "/support-tickets/when-will-my-product-arrive",
         },
         {
-          title: "Wishlist",
+          title: "المفضلة",
           url: "/wish-list",
         },
       ],
     },
-  ],
-  [
     {
-      title: "Vendor Account",
+      title: "حساب البائع",
       child: [
         {
-          title: "Dashboard",
+          title: "لوحة التحكم",
           url: "/vendor/dashboard",
         },
         {
-          title: "Profile",
+          title: "الملف الشخصي",
           url: "/vendor/account-setting",
         },
       ],
     },
     {
-      title: "Products",
+      title: "المنتجات",
       child: [
         {
-          title: "All products",
+          title: "جميع المنتجات",
           url: "/admin/products",
         },
         {
-          title: "Add/Edit product",
+          title: "إضافة/تعديل المنتج",
           url: "/admin/products/create",
         },
       ],
     },
     {
-      title: "Orders",
+      title: "الطلبات",
       child: [
         {
-          title: "All orders",
+          title: "جميع الطلبات",
           url: "/admin/orders",
         },
         {
-          title: "Order details",
+          title: "تفاصيل الطلب",
           url: "/admin/orders/f0ba538b-c8f3-45ce-b6c1-209cf07ba5f8",
         },
       ],
     },
-  ],
-  [
     {
-      title: "Sale Page",
+      title: "صفحة البيع",
       child: [
         {
-          title: "Sales Version 1",
+          title: "إصدار البيع 1",
           url: "/sale-page-1",
         },
         {
-          title: "Sales Version 2",
+          title: "إصدار البيع 2",
           url: "/sale-page-2",
         },
       ],
     },
     {
-      title: "Shop",
+      title: "المتجر",
       child: [
         {
-          title: "Search product",
+          title: "البحث عن منتج",
           url: "/product/search/mobile phone",
         },
         {
-          title: "Single product",
+          title: "منتج واحد",
           url: "/product/lord-2019",
         },
         {
-          title: "Cart",
+          title: "السلة",
           url: "/cart",
         },
         {
-          title: "Checkout",
+          title: "متابعة الطلب",
           url: "/checkout",
         },
         {
-          title: "Alternative Checkout",
+          title: "الدفع البديل",
           url: "/checkout-alternative",
         },
         {
-          title: "Order confirmation",
+          title: "تأكيد الطلب",
           url: "/order-confirmation",
         },
       ],
@@ -137,59 +133,59 @@ const navbarNavigations = [
   {
     megaMenu: false,
     megaMenuWithSub: false,
-    title: "Pages",
+    title: "الصفحات",
     child: [
       {
-        title: "Sale Page",
+        title: "صفحة البيع",
         child: [
           {
-            title: "Version 1",
+            title: "الإصدار 1",
             url: "/sale-page-1",
           },
           {
-            title: "Version 2",
+            title: "الإصدار 2",
             url: "/sale-page-2",
           },
         ],
       },
       {
-        title: "Vendor",
+        title: "البائع",
         child: [
           {
-            title: "All vendors",
+            title: "جميع البائعين",
             url: "/shops",
           },
           {
-            title: "Vendor store",
+            title: "متجر البائع",
             url: "/shops/scarlett-beauty",
           },
         ],
       },
       {
-        title: "Shop",
+        title: "المتجر",
         child: [
           {
-            title: "Search product",
+            title: "البحث عن منتج",
             url: "/product/search/mobile phone",
           },
           {
-            title: "Single product",
+            title: "منتج واحد",
             url: "/product/lord-2019",
           },
           {
-            title: "Cart",
+            title: "السلة",
             url: "/cart",
           },
           {
-            title: "Checkout",
+            title: "الدفع",
             url: "/checkout",
           },
           {
-            title: "Alternative Checkout",
+            title: "الدفع البديل",
             url: "/checkout-alternative",
           },
           {
-            title: "Order confirmation",
+            title: "تأكيد الطلب",
             url: "/order-confirmation",
           },
         ],
@@ -199,62 +195,62 @@ const navbarNavigations = [
   {
     megaMenu: false,
     megaMenuWithSub: false,
-    title: "User Account",
+    title: "حساب المستخدم",
     child: [
       {
-        title: "Orders",
+        title: "الطلبات",
         child: [
           {
-            title: "Order List",
+            title: "قائمة الطلبات",
             url: "/orders",
           },
           {
-            title: "Order Details",
+            title: "تفاصيل الطلب",
             url: "/orders/f0ba538b-c8f3-45ce-b6c1-209cf07ba5f8",
           },
         ],
       },
       {
-        title: "Profile",
+        title: "الملف الشخصي",
         child: [
           {
-            title: "View Profile",
+            title: "عرض الملف الشخصي",
             url: "/profile",
           },
           {
-            title: "Edit Profile",
+            title: "تعديل الملف الشخصي",
             url: "/profile/e42e28ea-528f-4bc8-81fb-97f658d67d75",
           },
         ],
       },
       {
-        title: "Address",
+        title: "العنوان",
         child: [
           {
-            title: "Address List",
+            title: "قائمة العناوين",
             url: "/address",
           },
           {
-            title: "Add Address",
+            title: "إضافة عنوان",
             url: "/address/d27d0e28-c35e-4085-af1e-f9f1b1bd9c34",
           },
         ],
       },
       {
-        title: "Support tickets",
+        title: "تذاكر الدعم",
         child: [
           {
-            title: "All tickets",
+            title: "جميع التذاكر",
             url: "/support-tickets",
           },
           {
-            title: "Ticket details",
+            title: "تفاصيل التذكرة",
             url: "/support-tickets/when-will-my-product-arrive",
           },
         ],
       },
       {
-        title: "Wishlist",
+        title: "المفضلة",
         url: "/wish-list",
       },
     ],

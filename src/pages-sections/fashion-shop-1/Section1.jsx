@@ -37,6 +37,8 @@ const Section1 = () => {
             اعثر على المقاس المثالي لقدميك
           </h2>
         </div>
+      </Grid>
+      <Grid>
         <div
           style={{
             position: "absolute",
