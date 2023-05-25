@@ -14,7 +14,13 @@ import PlantPot from "components/icons/PlantPot";
 import TeddyBear from "components/icons/TeddyBear";
 import Woman from "components/icons/Woman";
 const navigations = [
-  
+  {
+    icon: Dress,
+    title: "Fashion",
+    href: "/fashion",
+    menuComponent: "MegaMenu1",
+    menuData: {
+      categories: [
         {
           title: "Men's Shoes",
           href: "/product/search/shoes",
@@ -67,5 +73,8 @@ const navigations = [
             },
           ],
         },
+      ],
+    },
+  },
 ];
 export default navigations;

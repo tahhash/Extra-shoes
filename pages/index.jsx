@@ -10,7 +10,7 @@ import api from "utils/__api__/fashion-shop";
 const IndexPage = (props) => {
   return (
     <ShopLayout1 showTopbar={false}>
-      <SEO title="Exxtra" />
+      <SEO title="Exxtra"/>
       <Box
         sx={{
           backgroundColor: "#ffffff",
