@@ -35,7 +35,7 @@ const Cart = () => {
             }}
           >
             <FlexBetween mb={2}>
-              <Span color="grey.600">Total:</Span>
+              <Span color="grey.600">الإجمالي:</Span>
 
               <Span fontSize={18} fontWeight={600} lineHeight="1">
                 {currency(getTotalPrice())}
@@ -49,7 +49,7 @@ const Cart = () => {
             />
 
             <FlexBox alignItems="center" columnGap={1} mb={2}>
-              <Span fontWeight="600">Additional Comments</Span>
+              <Span fontWeight="600">تعليقات إضافية:</Span>
 
               <Span
                 p="6px 10px"
@@ -82,9 +82,9 @@ const Cart = () => {
             <TextField
               fullWidth
               size="small"
-              label="Voucher"
+              label="قسيمة"
               variant="outlined"
-              placeholder="Voucher"
+              placeholder="قسيمة"
             />
 
             <Button
@@ -96,7 +96,7 @@ const Cart = () => {
                 mb: 4,
               }}
             >
-              Apply Voucher
+              تطبيق القسيمة
             </Button>
 
             <Divider
@@ -106,7 +106,7 @@ const Cart = () => {
             />
 
             <Span fontWeight={600} mb={2} display="block">
-              Shipping Estimates
+            تقديرات الشحن
             </Span>
 
             <Autocomplete
@@ -120,9 +120,9 @@ const Cart = () => {
                 <TextField
                   {...params}
                   size="small"
-                  label="Country"
+                  label="الدولة"
                   variant="outlined"
-                  placeholder="Select Country"
+                  placeholder="اختر الدولة"
                 />
               )}
             />
@@ -131,9 +131,9 @@ const Cart = () => {
               select
               fullWidth
               size="small"
-              label="State"
+              label="الولاية"
               variant="outlined"
-              placeholder="Select State"
+              placeholder="اختر الولاية"
               defaultValue="new-york"
             >
               {stateList.map((item) => (
@@ -146,8 +146,8 @@ const Cart = () => {
             <TextField
               fullWidth
               size="small"
-              label="Zip Code"
-              placeholder="3100"
+              label="الرمز البريدي"
+              placeholder="12000"
               variant="outlined"
               sx={{
                 mt: 2,
@@ -162,7 +162,7 @@ const Cart = () => {
                 my: 2,
               }}
             >
-              Calculate Shipping
+              حساب التكلفة الشحن
             </Button>
 
             <Button
@@ -172,7 +172,7 @@ const Cart = () => {
               variant="contained"
               LinkComponent={Link}
             >
-              Checkout Now
+              الدفع الآن
             </Button>
           </Card>
         </Grid>
@@ -182,12 +182,8 @@ const Cart = () => {
 };
 const stateList = [
   {
-    value: "new-york",
-    label: "New York",
-  },
-  {
-    value: "chicago",
-    label: "Chicago",
+    value: "tebessa",
+    label: "تبسة",
   },
 ];
 export default Cart;

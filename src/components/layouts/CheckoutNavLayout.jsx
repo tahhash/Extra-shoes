@@ -84,19 +84,19 @@ const CheckoutNavLayout = ({ children }) => {
 };
 const stepperList = [
   {
-    title: "Cart",
+    title: "عربة التسوق",
     disabled: false,
   },
   {
-    title: "Details",
+    title: "تفاصيل",
     disabled: false,
   },
   {
-    title: "Payment",
+    title: "الدفع",
     disabled: false,
   },
   {
-    title: "Review",
+    title: "مراجعة",
     disabled: true,
   },
 ];
