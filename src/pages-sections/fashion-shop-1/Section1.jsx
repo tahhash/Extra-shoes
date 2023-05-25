@@ -37,7 +37,13 @@ const Section1 = () => {
             اعثر على المقاس المثالي لقدميك
           </h2>
         </div>
-        <div
+        
+      </Grid>
+
+      <Box mb="1.5rem" />
+
+      <Grid container spacing={3}>
+      <div
           style={{
             position: "absolute",
             bottom: "20px",
