@@ -213,7 +213,7 @@ const Navbar = ({ navListOpen, hideCategories, elevation, border }) => {
                 ml={1.25}
                 color="grey.600"
               >
-                Categories
+                تصنيفات المنتجات
               </Paragraph>
 
               {settings.direction === "ltr" ? (

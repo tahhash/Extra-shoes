@@ -29,22 +29,22 @@ const MobileNavigationBar = () => {
 };
 const list = [
   {
-    title: "Home",
+    title: "الصفحة الرئيسية",
     icon: Home,
     href: "/",
   },
   {
-    title: "Category",
+    title: "تصنيفات المنتجات",
     icon: CategoryOutlined,
     href: "/mobile-category-nav",
   },
   {
-    title: "Cart",
+    title: "السلة",
     icon: ShoppingBagOutlined,
     href: "/cart",
   },
   {
-    title: "Account",
+    title: "الحساب",
     icon: User2,
     href: "/profile",
   },
