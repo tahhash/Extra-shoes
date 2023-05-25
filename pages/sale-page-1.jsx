@@ -93,16 +93,7 @@ const SalePage1 = () => {
           />
         </CategoryWrapper>
 
-        {/* TITLE */}
-        <FlexBox mb={4} flexWrap="wrap">
-          <H1 color="primary.main" mr={1} lineHeight="1">
-            Flash Deals,
-          </H1>
-
-          <H1 color="grey.600" lineHeight="1">
-            Enjoy Upto 80% discounts
-          </H1>
-        </FlexBox>
+        
 
         {/* SELECTED CATEGORY LIST */}
         <Box mb={4} overflow="hidden" ref={categoryRef}>

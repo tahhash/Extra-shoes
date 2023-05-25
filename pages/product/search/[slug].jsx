@@ -47,8 +47,8 @@ const ProductSearchResult = () => {
           }}
         >
           <Box>
-            <H5>Searching for “ Shoes ”</H5>
-            <Paragraph color="grey.600">48 results found</Paragraph>
+            <H5>البحث عن حذاء</H5>
+            <Paragraph color="grey.600">تم العثور على 48 نتيجة</Paragraph>
           </Box>
 
           <FlexBox
@@ -59,7 +59,7 @@ const ProductSearchResult = () => {
           >
             <FlexBox alignItems="center" gap={1} flex="1 1 0">
               <Paragraph color="grey.600" whiteSpace="pre">
-                Sort by:
+              :ترتيب حسب
               </Paragraph>
 
               <TextField
@@ -84,7 +84,7 @@ const ProductSearchResult = () => {
 
             <FlexBox alignItems="center" my="0.25rem">
               <Paragraph color="grey.600" mr={1}>
-                View:
+              :عرض
               </Paragraph>
 
               <IconButton onClick={toggleView("grid")}>
@@ -147,19 +147,19 @@ const ProductSearchResult = () => {
 };
 const sortOptions = [
   {
-    label: "Relevance",
+    label: "الشهرة",
     value: "Relevance",
   },
   {
-    label: "Date",
+    label: "التاريخ",
     value: "Date",
   },
   {
-    label: "Price Low to High",
+    label: "من الأقل إلى الأعلى سعرًا",
     value: "Price Low to High",
   },
   {
-    label: "Price High to Low",
+    label: "من الأعلى إلى الأقل سعرًا",
     value: "Price High to Low",
   },
 ];

@@ -21,7 +21,7 @@ const ProductFilterCard = () => {
       elevation={1}
     >
       {/* CATEGORY VARIANT FILTER */}
-      <H6 mb={1.25}>Categories</H6>
+      <H6 mb={1.25}>التصنيفات</H6>
 
       {categoryList.map((item) =>
         item.subCategories ? (
@@ -73,7 +73,7 @@ const ProductFilterCard = () => {
       />
 
       {/* PRICE VARIANT FILTER */}
-      <H6 mb={2}>Price Range</H6>
+      <H6 mb={2}>نطاق الأسعار</H6>
       <FlexBetween>
         <TextField placeholder="0" type="number" size="small" fullWidth />
         <H5 color="grey.600" px={1}>
@@ -89,7 +89,7 @@ const ProductFilterCard = () => {
       />
 
       {/* BRAND VARIANT FILTER */}
-      <H6 mb={2}>Brands</H6>
+      <H6 mb={2}>العلامات التجارية</H6>
       {brandList.map((item) => (
         <FormControlLabel
           key={item}
@@ -125,7 +125,7 @@ const ProductFilterCard = () => {
       />
 
       {/* RATINGS FILTER */}
-      <H6 mb={2}>Ratings</H6>
+      <H6 mb={2}>التقييمات</H6>
       {[5, 4, 3, 2, 1].map((item) => (
         <FormControlLabel
           control={<Checkbox size="small" color="secondary" />}
@@ -144,7 +144,7 @@ const ProductFilterCard = () => {
       />
 
       {/* COLORS VARIANT FILTER */}
-      <H6 mb={2}>Colors</H6>
+      <H6 mb={2}>الألوان</H6>
       <FlexBox mb={2} flexWrap="wrap" gap={1}>
         {colorList.map((item) => (
           <Box
@@ -165,21 +165,18 @@ const ProductFilterCard = () => {
 };
 const categoryList = [
   {
-    title: "Bath Preparations",
-    subCategories: ["Bubble Bath", "Bath Capsules", "Others"],
+    title: "أحذية الرجال",
+    subCategories: ["سنيكرز", "أحذية طويلة", "صنادل", "أحذية رياضية", "أحذية عادية"],
   },
   {
-    title: "Eye Makeup Preparations",
-  },
-  {
-    title: "Fragrance",
-  },
-  {
-    title: "Hair Preparations",
+    title: "أحذية النساء",
+    subCategories: ["سنيكرز", "أحذية طويلة", "صنادل", "أحذية رياضية", "أحذية عادية"],
   },
 ];
-const brandList = ["Macc", "Karts", "Baals", "Bukks", "Luasis"];
-const otherOptions = ["On Sale", "In Stock", "Featured"];
+
+
+const brandList = ["نايك", "أديداس", "بوما", "ريبوك", "نيو بالانس", "فانز", "كونفرس"];
+const otherOptions = ["بالتخفيض", "متوفر في المخزون", "مميز"];
 const colorList = [
   "#1C1C1C",
   "#FF7A7A",
