@@ -27,8 +27,8 @@ const BackgroundImageComponent = () => {
         backgroundImage: 'url("/homepage.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
         height: '70vh',
+        width: '100vw', // Change to 100vw
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -40,7 +40,6 @@ const BackgroundImageComponent = () => {
           position: 'absolute',
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Example overlay color
         }}
       ></div>
       <h2
