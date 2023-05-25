@@ -69,7 +69,7 @@ const Login = () => {
         />
 
         <H1 textAlign="center" mt={1} mb={4} fontSize={16}>
-          Welcome To Bazaar
+          مرحبًا بك في إكسترا
         </H1>
 
         <BazaarTextField
@@ -82,7 +82,7 @@ const Login = () => {
           onBlur={handleBlur}
           value={values.email}
           onChange={handleChange}
-          label="Email or Phone Number"
+          label="البريد الإلكتروني أو رقم الهاتف"
           placeholder="exmple@mail.com"
           error={!!touched.email && !!errors.email}
           helperText={touched.email && errors.email}
@@ -93,7 +93,7 @@ const Login = () => {
           fullWidth
           size="small"
           name="password"
-          label="Password"
+          label="كلمة المرور"
           autoComplete="on"
           variant="outlined"
           onBlur={handleBlur}
@@ -122,17 +122,17 @@ const Login = () => {
             height: 44,
           }}
         >
-          Login
+          تسجيل الدخول
         </Button>
       </form>
 
       <SocialButtons />
 
       <FlexRowCenter mt="1.25rem">
-        <Box>Don&apos;t have account?</Box>
+        <Box>هل ليس لديك حساب؟</Box>
         <Link href="/signup">
           <H6 ml={1} borderBottom="1px solid" borderColor="grey.900">
-            Sign Up
+          إنشاء حساب جديد
           </H6>
         </Link>
       </FlexRowCenter>
@@ -144,10 +144,10 @@ const Login = () => {
         py={2.5}
         mt="1.25rem"
       >
-        Forgot your password?
+        هل نسيت كلمة المرور؟
         <Link href="/reset-password">
           <H6 ml={1} borderBottom="1px solid" borderColor="grey.900">
-            Reset It
+          إعادة تعيينها
           </H6>
         </Link>
       </FlexBox>

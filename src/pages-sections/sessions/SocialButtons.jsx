@@ -35,7 +35,7 @@ const SocialButtons = (props) => {
           alt="facebook"
         />
         <Box fontSize="12px" ml={1}>
-          Continue with Facebook
+        المتابعة باستخدام فيسبوك
         </Box>
       </Button>
 
@@ -49,7 +49,7 @@ const SocialButtons = (props) => {
       >
         <Image src="/assets/images/icons/google-1.svg" alt="facebook" />
         <Box fontSize="12px" ml={1}>
-          Continue with Google
+        المتابعة باستخدام جوجل
         </Box>
       </Button>
     </Fragment>

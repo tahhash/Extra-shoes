@@ -98,21 +98,7 @@ const MobileCategoryNav = () => {
       </Box>
 
       <Box className="container">
-        <Typography fontWeight="600" fontSize="15px" mb={2}>
-          Recommended Categories
-        </Typography>
-
-        <Box mb={4}>
-          <Grid container spacing={3}>
-            {suggestedList.map((item, ind) => (
-              <Grid item lg={1} md={2} sm={3} xs={4} key={ind}>
-                <Link href="/product/search/mobile">
-                  <CategoryCard2 {...item} />
-                </Link>
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
+        
 
         {category?.menuComponent === "MegaMenu1" ? (
           subCategoryList.map((item, ind) => (

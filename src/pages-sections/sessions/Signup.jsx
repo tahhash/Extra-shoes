@@ -35,7 +35,7 @@ const Signup = () => {
         />
 
         <H1 textAlign="center" mt={1} mb={4} fontSize={16}>
-          Create Your Account
+        إنشاء حسابك
         </H1>
 
         <BazaarTextField
@@ -43,7 +43,7 @@ const Signup = () => {
           fullWidth
           name="name"
           size="small"
-          label="Full Name"
+          label="الاسم الكامل"
           variant="outlined"
           onBlur={handleBlur}
           value={values.name}
@@ -63,7 +63,7 @@ const Signup = () => {
           onBlur={handleBlur}
           value={values.email}
           onChange={handleChange}
-          label="Email or Phone Number"
+          label="البريد الإلكتروني أو رقم الهاتف"
           placeholder="exmple@mail.com"
           error={!!touched.email && !!errors.email}
           helperText={touched.email && errors.email}
@@ -74,7 +74,7 @@ const Signup = () => {
           fullWidth
           size="small"
           name="password"
-          label="Password"
+          label="كلمة المرور"
           variant="outlined"
           autoComplete="on"
           placeholder="*********"
@@ -100,7 +100,7 @@ const Signup = () => {
           autoComplete="on"
           name="re_password"
           variant="outlined"
-          label="Retype Password"
+          label="إعادة إدخال كلمة المرور"
           placeholder="*********"
           onBlur={handleBlur}
           onChange={handleChange}
@@ -135,10 +135,10 @@ const Signup = () => {
               alignItems="center"
               justifyContent="flex-start"
             >
-              By signing up, you agree to
+              بالتسجيل، أنت توافق على
               <a href="/" target="_blank" rel="noreferrer noopener">
                 <H6 ml={1} borderBottom="1px solid" borderColor="grey.900">
-                  Terms & Condition
+                الشروط والأحكام
                 </H6>
               </a>
             </FlexBox>
@@ -154,16 +154,16 @@ const Signup = () => {
             height: 44,
           }}
         >
-          Create Account
+          إنشاء حساب
         </Button>
       </form>
 
       <SocialButtons />
       <FlexRowCenter mt="1.25rem">
-        <Box>Already have an account?</Box>
+        <Box>هل لديك حساب بالفعل؟</Box>
         <Link href="/login">
           <H6 ml={1} borderBottom="1px solid" borderColor="grey.900">
-            Login
+          تسجيل الدخول
           </H6>
         </Link>
       </FlexRowCenter>
@@ -178,20 +178,20 @@ const initialValues = {
   agreement: false,
 };
 const formSchema = yup.object().shape({
-  name: yup.string().required("Name is required"),
-  email: yup.string().email("invalid email").required("Email is required"),
-  password: yup.string().required("Password is required"),
+  name: yup.string().required("الاسم مطلوب"),
+  email: yup.string().email("البريد الإلكتروني غير صالح").required("البريد الإلكتروني مطلوب"),
+  password: yup.string().required("كلمة المرور مطلوبة"),
   re_password: yup
     .string()
-    .oneOf([yup.ref("password"), null], "Passwords must match")
-    .required("Please re-type password"),
+    .oneOf([yup.ref("password"), null], "يجب أن تتطابق كلمات المرور")
+    .required("يرجى إعادة إدخال كلمة المرور"),
   agreement: yup
     .bool()
     .test(
       "agreement",
-      "You have to agree with our Terms and Conditions!",
+      "يجب الموافقة على شروطنا وأحكامنا",
       (value) => value === true
     )
-    .required("You have to agree with our Terms and Conditions!"),
+    .required("يجب عليك الموافقة على شروطنا وأحكامنا"),
 });
 export default Signup;
