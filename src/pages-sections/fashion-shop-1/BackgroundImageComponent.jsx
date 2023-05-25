@@ -27,6 +27,7 @@ const BackgroundImageComponent = () => {
         backgroundImage: 'url("/homepage.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        backgroundAttachment: 'fixed', // Add this line
         height: '70vh',
         display: 'flex',
         justifyContent: 'center',
