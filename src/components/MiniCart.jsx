@@ -52,7 +52,7 @@ const MiniCart = ({ toggleSidenav }) => {
             <CartBag color="inherit" />
 
             <Paragraph lineHeight={0} fontWeight={600}>
-              {cartList.length} item
+              {cartList.length} المنتج
             </Paragraph>
           </FlexBox>
 
@@ -83,7 +83,7 @@ const MiniCart = ({ toggleSidenav }) => {
               textAlign="center"
               maxWidth="200px"
             >
-              Your shopping bag is empty. Start shopping
+              حقيبة التسوق الخاصة بك فارغة. ابدأ التسوق
             </Box>
           </FlexBox>
         )}
@@ -194,7 +194,7 @@ const MiniCart = ({ toggleSidenav }) => {
             }}
             onClick={handleNavigate("/checkout-alternative")}
           >
-            Checkout Now ({currency(getTotalPrice())})
+            الدفع الآن ({currency(getTotalPrice())})
           </Button>
 
           <Button
@@ -206,7 +206,7 @@ const MiniCart = ({ toggleSidenav }) => {
             }}
             onClick={handleNavigate("/cart")}
           >
-            View Cart
+            عرض العربة
           </Button>
         </Box>
       )}
