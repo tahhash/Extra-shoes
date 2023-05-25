@@ -28,7 +28,6 @@ const BackgroundImageComponent = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '70vh',
-        width: '100vw', // Change to 100vw
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
