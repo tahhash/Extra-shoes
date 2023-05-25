@@ -258,40 +258,40 @@ const navbarNavigations = [
   {
     megaMenu: false,
     megaMenuWithSub: false,
-    title: "Vendor Account",
+    title: "حساب البائع",
     child: [
       {
-        title: "Dashboard",
+        title: "لوحة التحكم",
         url: "/vendor/dashboard",
       },
       {
-        title: "Products",
+        title: "المنتجات",
         child: [
           {
-            title: "All products",
+            title: "جميع المنتجات",
             url: "/admin/products",
           },
           {
-            title: "Add/Edit product",
+            title: "إضافة/تعديل المنتج",
             url: "/admin/products/lord-2019",
           },
         ],
       },
       {
-        title: "Orders",
+        title: "الطلبات",
         child: [
           {
-            title: "All orders",
+            title: "جميع الطلبات",
             url: "/admin/orders",
           },
           {
-            title: "Order details",
+            title: "تفاصيل الطلب",
             url: "/admin/orders/f0ba538b-c8f3-45ce-b6c1-209cf07ba5f8",
           },
         ],
       },
       {
-        title: "Profile",
+        title: "الملف الشخصي",
         url: "/vendor/account-setting",
       },
     ],
