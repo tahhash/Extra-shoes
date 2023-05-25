@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Box, Container, Grid } from "@mui/material";
+
 
 const BackgroundImageComponent = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,6 +24,12 @@ const BackgroundImageComponent = () => {
   }
 
   return (
+    <Container
+      sx={{
+        pt: "1rem",
+        mb: "4rem",
+      }}
+    >
     <div
       style={{
         backgroundImage: 'url("/homepage.jpg")',
@@ -51,6 +59,8 @@ const BackgroundImageComponent = () => {
         اعثر على المقاس المثالي لقدميك
       </h2>
     </div>
+
+    </Container>
   );
 };
 
