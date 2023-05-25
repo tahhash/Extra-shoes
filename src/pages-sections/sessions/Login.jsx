@@ -61,13 +61,6 @@ const Login = () => {
   return (
     <Wrapper elevation={3} passwordVisibility={passwordVisibility}>
       <form onSubmit={handleSubmit}>
-        <BazaarImage
-          src="/assets/images/logo.svg"
-          sx={{
-            m: "auto",
-          }}
-        />
-
         <H1 textAlign="center" mt={1} mb={4} fontSize={16}>
           مرحبًا بك في إكسترا
         </H1>
