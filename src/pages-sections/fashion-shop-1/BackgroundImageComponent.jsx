@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Container} from "@mui/material";
-
 
 const BackgroundImageComponent = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -24,43 +22,43 @@ const BackgroundImageComponent = () => {
   }
 
   return (
-    
-      <Box
-        sx={{
-          position: 'relative',
+    <div
+      style={{
+        backgroundImage: 'url("/homepage.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        height: '70vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+      }}
+    >
+      <div
+        style={{
+          position: 'absolute',
           width: '100%',
-          height: '70vh',
-          overflow: 'hidden',
+          height: '100%',
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Example overlay color
+        }}
+      ></div>
+      <h2
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '33.33%',
+          transform: 'translate(-50%, -50%)',
+          color: 'white',
+          zIndex: 1,
+          fontSize: '36px',
+          fontWeight: 'bold',
+          textAlign: 'center',
         }}
       >
-        <img
-          src="/homepage.jpg"
-          alt="Background Image"
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            height: '100%',
-            width: 'auto',
-          }}
-        />
-        <h2
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '33.33%',
-            transform: 'translate(-50%, -50%)',
-            color: 'white',
-            zIndex: 1,
-            fontSize: '36px',
-            fontWeight: 'bold',
-            textAlign: 'center',
-          }}
-        >
-          اعثر على المقاس المثالي لقدميك
-        </h2>
-      </Box>
+        اعثر على المقاس المثالي لقدميك
+      </h2>
+    </div>
   );
 };
 
