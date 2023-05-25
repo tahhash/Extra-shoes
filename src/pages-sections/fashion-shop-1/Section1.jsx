@@ -37,21 +37,19 @@ const Section1 = () => {
             اعثر على المقاس المثالي لقدميك
           </h2>
         </div>
-        
       </Grid>
 
       <Box mb="1.5rem" />
 
       <Grid container spacing={3}>
-      <div
+        <div
           style={{
-            position: "absolute",
-            bottom: "20px",
-            left: "50%",
-            transform: "translateX(-50%)",
+            position: "relative",
             color: "black",
             fontSize: "48px",
             fontWeight: "bold",
+            textAlign: "center",
+            margin: "20px auto",
           }}
         >
           مجموعة ضخمة من الأحذية بمقاسات كبيرة
