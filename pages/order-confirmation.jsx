@@ -36,11 +36,11 @@ const OrderConfirmation = () => {
             src="/assets/images/illustrations/party-popper.svg"
           />
           <H1 lineHeight={1.1} mt="1.5rem">
-            Your order is completed!
+          !تم استكمال طلبك بنجاح
           </H1>
 
           <Paragraph color="grey.800" mt="0.3rem">
-            You will be receiving confirmation email with order details.
+          .سوف تتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على تفاصيل الطلب
           </Paragraph>
 
           <StyledButton
@@ -49,9 +49,9 @@ const OrderConfirmation = () => {
             variant="contained"
             className="button-link"
             LinkComponent={Link}
-            href="/market-1"
+            href="/index"
           >
-            Browse products
+            تصفح المنتجات
           </StyledButton>
         </Wrapper>
       </Container>
