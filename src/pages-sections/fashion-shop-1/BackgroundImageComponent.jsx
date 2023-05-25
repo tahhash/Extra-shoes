@@ -24,12 +24,7 @@ const BackgroundImageComponent = () => {
   }
 
   return (
-    <Container
-      sx={{
-        pt: "1rem",
-        mb: "4rem",
-      }}
-    >
+    
       <Box
         sx={{
           position: 'relative',
@@ -66,7 +61,6 @@ const BackgroundImageComponent = () => {
           اعثر على المقاس المثالي لقدميك
         </h2>
       </Box>
-    </Container>
   );
 };
 
