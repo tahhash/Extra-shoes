@@ -17,7 +17,7 @@ const Section1 = () => {
           backgroundImage: 'url("/homepage.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "100vh",
+          height: "60vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
