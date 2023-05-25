@@ -26,9 +26,6 @@ const IndexPage = (props) => {
         {/* NEW ARRIVALS */}
         <Section3 newArrivals={props.newArrivalsData} />
 
-        {/* DEALS OF THE WEEK GRID CAROUSEL */}
-        <Section4 dealOfTheWeek={props.dealOfTheWeek} />
-
         {/* TRENDING ITEMS */}
         <Section6 products={props.trendingItems} />
       </Box>
