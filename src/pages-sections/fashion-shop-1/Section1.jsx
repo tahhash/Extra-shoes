@@ -2,7 +2,6 @@ import { Box, Container, Grid } from "@mui/material";
 import FeedbackThumbsUpIcon from "components/icons/FeedbackThumbsUp";
 import CreditCardVerifiedIcon from "components/icons/CreditCardVerified";
 import ShowcaseCard4 from "./showcase-cards/ShowcaseCard4";
-import { useEffect, useState } from 'react';
 
 const Section1 = () => {
   return (

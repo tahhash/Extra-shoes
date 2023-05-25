@@ -18,7 +18,7 @@ const IndexPage = (props) => {
         }}
       >
 
-        <BackgroundImageComponent></BackgroundImageComponent>
+        <BackgroundImageComponent/>
 
 
         {/* HERO SECTION AND SERCIVE CARDS */}
