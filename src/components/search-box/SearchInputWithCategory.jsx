@@ -127,7 +127,7 @@ const categories = [
     value: "*",
   },
   {
-    title: "أحذية نسائ",
+    title: "أحذية نساء",
     value: "*",
   },
 ];
