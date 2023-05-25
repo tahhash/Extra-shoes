@@ -12,32 +12,32 @@ const Section1 = () => {
       }}
     >
       {/* GRIDS */}
-      <Grid
-        container
-        justifyContent="center"
+      <div
         style={{
           backgroundImage: 'url("/homepage.jpg")',
           backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <Grid item xs={12} sm={8} md={6} style={{ position: "relative" }}>
-          <h2
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "33.33%", // Updated left property
-              transform: "translate(-50%, -50%)",
-              color: "white",
-              zIndex: 1,
-              width: "100%",
-              fontSize: "36px",
-              fontWeight: "bold",
-            }}
-          >
-            اعثر على المقاس المثالي لقدميك
-          </h2>
-        </Grid>
-      </Grid>
+        <h2
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "33.33%", // Updated left property
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            zIndex: 1,
+            fontSize: "36px",
+            fontWeight: "bold",
+          }}
+        >
+          اعثر على المقاس المثالي لقدميك
+        </h2>
+      </div>
 
       {/* END GRIDS */}
 
