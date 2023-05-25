@@ -6,28 +6,28 @@ const CheckoutSummary = () => {
   return (
     <Card1>
       <FlexBetween mb={1}>
-        <Typography color="grey.600">Subtotal:</Typography>
+        <Typography color="grey.600">:الإجمالي الفرعي</Typography>
         <Typography fontSize="18px" fontWeight="600" lineHeight="1">
           {currency(2610)}
         </Typography>
       </FlexBetween>
 
       <FlexBetween mb={1}>
-        <Typography color="grey.600">Shipping:</Typography>
+        <Typography color="grey.600">:الشحن</Typography>
         <Typography fontSize="18px" fontWeight="600" lineHeight="1">
           {currency(0)}
         </Typography>
       </FlexBetween>
 
       <FlexBetween mb={1}>
-        <Typography color="grey.600">Tax:</Typography>
+        <Typography color="grey.600">:الضريبة</Typography>
         <Typography fontSize="18px" fontWeight="600" lineHeight="1">
           {currency(40)}
         </Typography>
       </FlexBetween>
 
       <FlexBetween mb={2}>
-        <Typography color="grey.600">Discount:</Typography>
+        <Typography color="grey.600">:الخصم</Typography>
         <Typography fontSize="18px" fontWeight="600" lineHeight="1">
           {currency(0)}
         </Typography>
@@ -50,7 +50,7 @@ const CheckoutSummary = () => {
       </Typography>
 
       <TextField
-        placeholder="Voucher"
+        placeholder="القسيمة"
         variant="outlined"
         size="small"
         fullWidth
@@ -64,7 +64,7 @@ const CheckoutSummary = () => {
           mb: "30px",
         }}
       >
-        Apply Voucher
+        تطبيق القسيمة
       </Button>
     </Card1>
   );
