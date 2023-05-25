@@ -22,7 +22,7 @@ const SearchInputWithCategory = () => {
   const [_, startTransition] = useTransition();
   const [category, setCategory] = useState("*");
   const [resultList, setResultList] = useState([]);
-  const [categoryTitle, setCategoryTitle] = useState("All Categories");
+  const [categoryTitle, setCategoryTitle] = useState("جميع الفئات");
 
   // HANDLE CHANGE THE CATEGORY
   const handleCategoryChange = (cat) => () => {
@@ -123,11 +123,11 @@ const SearchInputWithCategory = () => {
 };
 const categories = [
   {
-    title: "Men's shoes",
+    title: "أحذية رجال",
     value: "*",
   },
   {
-    title: "Women's shoes",
+    title: "أحذية نسائ",
     value: "*",
   },
 ];
