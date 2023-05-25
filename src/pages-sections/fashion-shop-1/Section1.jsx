@@ -21,18 +21,20 @@ const Section1 = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          position: "relative", // Added position property
         }}
       >
         <h2
           style={{
             position: "absolute",
             top: "50%",
-            left: "33.33%", // Updated left property
+            left: "33.33%",
             transform: "translate(-50%, -50%)",
             color: "white",
             zIndex: 1,
             fontSize: "36px",
             fontWeight: "bold",
+            textAlign: "center", // Added textAlign property
           }}
         >
           اعثر على المقاس المثالي لقدميك
