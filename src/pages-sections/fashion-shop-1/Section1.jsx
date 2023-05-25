@@ -2,7 +2,8 @@ import { Box, Container, Grid } from "@mui/material";
 import FeedbackThumbsUpIcon from "components/icons/FeedbackThumbsUp";
 import CreditCardVerifiedIcon from "components/icons/CreditCardVerified";
 import ShowcaseCard4 from "./showcase-cards/ShowcaseCard4";
-import Image from "next/image";
+import { useEffect, useState } from 'react';
+
 const Section1 = () => {
   return (
     <Container
@@ -12,34 +13,8 @@ const Section1 = () => {
       }}
     >
       {/* GRIDS */}
-      <div
-        style={{
-          backgroundImage: 'url("/homepage.jpg")',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "60vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          position: "relative", // Added position property
-        }}
-      >
-        <h2
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "33.33%",
-            transform: "translate(-50%, -50%)",
-            color: "white",
-            zIndex: 1,
-            fontSize: "36px",
-            fontWeight: "bold",
-            textAlign: "center", // Added textAlign property
-          }}
-        >
-          اعثر على المقاس المثالي لقدميك
-        </h2>
-      </div>
+
+      
 
       {/* END GRIDS */}
 

@@ -4,7 +4,7 @@ import ShopLayout1 from "components/layouts/ShopLayout1";
 import Section1 from "pages-sections/fashion-shop-1/Section1";
 import Section2 from "pages-sections/fashion-shop-1/Section2";
 import Section3 from "pages-sections/fashion-shop-1/Section3";
-import Section4 from "pages-sections/fashion-shop-1/Section4";
+import BackgroundImageComponent from "pages-sections/fashion-shop-1/BackgroundImageComponent";
 import Section6 from "pages-sections/fashion-shop-1/Section6";
 import api from "utils/__api__/fashion-shop";
 const IndexPage = (props) => {
@@ -17,6 +17,10 @@ const IndexPage = (props) => {
           overFlow: "hidden",
         }}
       >
+
+        <BackgroundImageComponent></BackgroundImageComponent>
+
+
         {/* HERO SECTION AND SERCIVE CARDS */}
         <Section1 />
 
