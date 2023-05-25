@@ -39,22 +39,6 @@ const Section1 = () => {
         </div>
       </Grid>
 
-      <Box mb="1.5rem" />
-
-      <Grid container spacing={3}>
-        <div
-          style={{
-            position: "relative",
-            color: "black",
-            fontSize: "48px",
-            fontWeight: "bold",
-            textAlign: "center",
-            margin: "20px auto",
-          }}
-        >
-          مجموعة ضخمة من الأحذية بمقاسات كبيرة
-        </div>
-      </Grid>
 
       {/* END GRIDS */}
 
