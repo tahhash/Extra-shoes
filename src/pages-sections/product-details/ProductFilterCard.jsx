@@ -88,6 +88,18 @@ const ProductFilterCard = () => {
         }}
       />
 
+      {/* PRICE VARIANT FILTER */}
+      <H6 mb={2}>حجم الحذاء</H6>
+      <FlexBetween>
+        <TextField placeholder="0" type="number" size="small" fullWidth />
+      </FlexBetween>
+
+      <Divider
+        sx={{
+          my: 3,
+        }}
+      />
+
       {/* BRAND VARIANT FILTER */}
       <H6 mb={2}>العلامات التجارية</H6>
       {brandList.map((item) => (
