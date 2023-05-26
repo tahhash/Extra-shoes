@@ -7,22 +7,22 @@ import DataListTable from "./table";
 const tableHeading = [
   {
     id: "orderId",
-    label: "Order ID",
+    label: "رقم الطلب",
     alignRight: false,
   },
   {
     id: "product",
-    label: "Product",
+    label: "المنتج",
     alignRight: false,
   },
   {
     id: "payment",
-    label: "Payment",
+    label: "الدفع",
     alignRight: false,
   },
   {
     id: "amount",
-    label: "Amount",
+    label: "المبلغ",
     alignCenter: true,
   },
 ];

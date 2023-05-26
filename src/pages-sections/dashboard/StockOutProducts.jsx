@@ -8,17 +8,17 @@ import DataListTable from "./table";
 const tableHeading = [
   {
     id: "product",
-    label: "Product",
+    label: "المنتج",
     alignRight: false,
   },
   {
     id: "stock",
-    label: "Stock",
+    label: "المخزون",
     alignRight: false,
   },
   {
     id: "amount",
-    label: "Amount",
+    label: "المبلغ",
     alignCenter: true,
   },
 ];
