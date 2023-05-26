@@ -43,15 +43,15 @@ export default function ShopSettings() {
   const [links, setLinks] = useState([
     {
       id: 1,
-      name: "Links",
+      name: "روابط",
       value: "https://www.productbanner.com",
     },
   ]);
   const handleAddLink = () => {
     const newLink = {
       id: Date.now(),
-      name: "Links",
-      value: "https://www.google.com",
+      name: "روابط",
+      value: "",
     };
     setLinks((state) => [...state, newLink]);
   };
@@ -61,7 +61,7 @@ export default function ShopSettings() {
   const handleFormSubmit = (values) => {};
   return (
     <Box py={4} maxWidth={740} margin="auto">
-      <H3 mb={2}>Shop Settings</H3>
+      <H3 mb={2}>إعدادات المتجر</H3>
 
       <Card
         sx={{
@@ -69,7 +69,7 @@ export default function ShopSettings() {
         }}
       >
         <Paragraph fontWeight={700} mb={4}>
-          Basic Settings
+        الإعدادات الأساسية
         </Paragraph>
 
         <Formik
@@ -91,7 +91,7 @@ export default function ShopSettings() {
                   color="info"
                   size="medium"
                   name="shopName"
-                  label="Shop Name *"
+                  label="اسم المتجر *"
                   onBlur={handleBlur}
                   value={values.shopName}
                   onChange={handleChange}
@@ -103,7 +103,7 @@ export default function ShopSettings() {
                   color="info"
                   size="medium"
                   name="shopPhone"
-                  label="Shop Phone"
+                  label="هاتف المتجر"
                   onBlur={handleBlur}
                   onChange={handleChange}
                   value={values.shopPhone}
@@ -119,14 +119,14 @@ export default function ShopSettings() {
                   name="category"
                   onBlur={handleBlur}
                   placeholder="Category"
-                  label="Select Category"
+                  label="اختر الفئة"
                   onChange={handleChange}
                   value={values.category}
                   error={Boolean(errors.category && touched.category)}
                   helperText={touched.category && errors.category}
                 >
-                  <MenuItem value="electronics">Electronics</MenuItem>
-                  <MenuItem value="fashion">Fashion</MenuItem>
+                  <MenuItem value="electronics">أحذية رجال</MenuItem>
+                  <MenuItem value="fashion">أحذية نساء</MenuItem>
                 </TextField>
 
                 <TextField
@@ -139,7 +139,7 @@ export default function ShopSettings() {
                   onBlur={handleBlur}
                   onChange={handleChange}
                   value={values.description}
-                  label="Description (optional)"
+                  label="الوصف (اختياري)"
                   error={Boolean(errors.description && touched.description)}
                   helperText={touched.description && errors.description}
                 />
@@ -148,7 +148,7 @@ export default function ShopSettings() {
                   color="info"
                   size="medium"
                   name="shopAddress"
-                  label="Shop Address"
+                  label="عنوان المتجر"
                   onBlur={handleBlur}
                   onChange={handleChange}
                   value={values.shopAddress}
@@ -163,7 +163,7 @@ export default function ShopSettings() {
                   type="number"
                   onBlur={handleBlur}
                   value={values.order}
-                  label="Minimum Order *"
+                  label="الحد الأدنى للطلب *"
                   onChange={handleChange}
                   error={Boolean(errors.order && touched.order)}
                   helperText={touched.order && errors.order}
@@ -171,7 +171,7 @@ export default function ShopSettings() {
               </Stack>
 
               <Button type="submit" color="info" variant="contained">
-                Save Changes
+              حفظ التغييرات
               </Button>
             </form>
           )}
@@ -184,14 +184,14 @@ export default function ShopSettings() {
         />
 
         <Paragraph fontWeight={700} mb={2}>
-          Shop Page Settings
+        إعدادات صفحة المتجر
         </Paragraph>
 
         <Stack spacing={3} mb={3}>
           <DropZone
             onChange={(files) => console.log(files)}
-            title="Main Banner (1920 x 360) *"
-            imageSize="We had to limit height to maintian consistancy. Some device both side of the banner might cropped for height limitation."
+            title="اللافتة الرئيسية (1920 × 360)*"
+            imageSize="تم تقييد الارتفاع للحفاظ على التوافق. قد يتم قص جانبي البانر على بعض الأجهزة بسبب قيود الارتفاع"
           />
 
           <TextField
@@ -200,18 +200,18 @@ export default function ShopSettings() {
             color="info"
             size="medium"
             name="features"
-            placeholder="Product Features"
-            label="Product Features"
+            placeholder="مميزات المنتج"
+            label="مميزات المنتج"
             defaultValue="electronics"
           >
-            <MenuItem value="electronics">Electronics</MenuItem>
-            <MenuItem value="fashion">Fashion</MenuItem>
+            <MenuItem value="electronics">أحذية رجال</MenuItem>
+            <MenuItem value="fashion">أحذية نساء</MenuItem>
           </TextField>
 
           <DropZone
             onChange={(files) => console.log(files)}
-            title="All products page banner * (Recommended size 1025x120)"
-            imageSize="We had to limit height to maintian consistancy. Some device both side of the banner might cropped for height limitation."
+            title="بانر صفحة جميع المنتجات * (الحجم الموصى به 1025 × 120)"
+            imageSize="تم تقييد الارتفاع للحفاظ على التوافق. قد يتم قص جانبي البانر على بعض الأجهزة بسبب قيود الارتفاع"
           />
         </Stack>
 
@@ -222,7 +222,7 @@ export default function ShopSettings() {
                 fullWidth
                 color="info"
                 size="medium"
-                label="Links"
+                label="روابط"
                 defaultValue={item.value}
               />
 
@@ -239,12 +239,12 @@ export default function ShopSettings() {
           ))}
 
           <Button color="info" variant="outlined" onClick={handleAddLink}>
-            Add Link
+          إضافة رابط
           </Button>
         </Box>
 
         <Button color="info" variant="contained">
-          Save Changes
+        حفظ التغييرات
         </Button>
       </Card>
     </Box>
