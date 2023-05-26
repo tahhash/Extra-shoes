@@ -38,6 +38,10 @@ const StyledContainer = styled(Container)({
   alignItems: "center",
   justifyContent: "space-between",
 });
+const currentHeight = 44;
+const newHeight = Math.round(currentHeight * 1.5);
+const newWidth = Math.round(newHeight * aspectRatio);
+
 
 // ==============================================================
 
@@ -162,7 +166,7 @@ const Header = ({ isFixed, className, searchInput }) => {
         {/* LEFT CONTENT - LOGO AND CATEGORY */}
         <FlexBox mr={2} minWidth="170px" alignItems="center">
           <Link href="/">
-          <Image height={66} width={99} src="/assets/images/logo2.svg" alt="logo" />
+          <Image height={newHeight} width={newWidth} src="/assets/images/logo2.svg" alt="logo" />
           </Link>
 
           {/* SHOW DROP DOWN CATEGORY BUTTON WHEN HEADER FIXED */}
