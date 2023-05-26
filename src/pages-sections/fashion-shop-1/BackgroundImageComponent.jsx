@@ -24,28 +24,33 @@ const BackgroundImageComponent = () => {
   return (
     <div
       style={{
-        backgroundImage: 'url("/homepage.jpg")',
-        backgroundSize: '100% 100%', // Set backgroundSize to fixed values
-        backgroundPosition: 'center',
+        width: '100vw', // Set width to 100vw for full screen width
         height: '70vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
+        overflow: 'hidden', // Ensure content stays within the parent div
       }}
     >
       <div
         style={{
-          position: 'absolute',
+          backgroundImage: 'url("/homepage.jpg")',
+          backgroundSize: '100% auto', // Set backgroundSize to maintain aspect ratio
+          backgroundPosition: 'center',
           width: '100%',
           height: '100%',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          zIndex: -1, // Set z-index to move the background behind other content
         }}
       ></div>
       <h2
         style={{
           position: 'absolute',
           top: '50%',
-          left: '33.33%',
+          left: '50%',
           transform: 'translate(-50%, -50%)',
           color: 'white',
           zIndex: 1,
