@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Box, Container, Grid } from "@mui/material";
 
 const BackgroundImageComponent = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,7 +23,13 @@ const BackgroundImageComponent = () => {
   }
 
   return (
-    <div
+    <Container sx={{
+      pt: "1rem",
+      mb: "4rem",
+    }}>
+
+      <Grid>
+      <div
       style={{
         width: '100vw', // Set width to 100vw for full screen width
         height: '70vh',
@@ -68,6 +75,9 @@ const BackgroundImageComponent = () => {
         }}
       ></div>
     </div>
+      </Grid>
+    </Container>
+    
   );
 };
 
