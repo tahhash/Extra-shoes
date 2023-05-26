@@ -249,42 +249,38 @@
 
 const productVariants = [
   {
-    title: "Option",
+    title: "مقاص",
     id: "opt_01GNCQMGM2QPHYQ37FWC41HF63",
     values: [
       {
-        value: "option 1",
+        value: "45",
         id: "optval_01GNCQMGNJPBNGBKJJY8A8QK8G",
       },
       {
-        value: "option 2",
+        value: "46",
         id: "optval_01GNCQMGP2YJMQW5Z0C0RZTZ3Y",
       },
       {
-        value: "option 3",
+        value: "47",
         id: "optval_01GNCQMGQ37RMQEZ9BV3AAQNWE",
       },
       {
-        value: "option 4",
+        value: "48",
         id: "optval_01GNCQMGRCBK0Z5FAB6JJD9J9Z",
       },
     ],
   },
   {
-    title: "Type",
+    title: "نوع البيع",
     id: "opt_01GNCQMGM3SN0R7E08631EJFA2",
     values: [
       {
-        value: "type 1",
+        value: "مباشرة",
         id: "optval_01GNCQMGMWTZ39SKCSE96WTEHN",
       },
       {
-        value: "type 2",
+        value: "طلب مخصص",
         id: "optval_01GNCQMGNJ7CVDN4Q8317CZ583",
-      },
-      {
-        value: "type 3",
-        id: "optval_01GNCQMGP2P1P3G5TXB10W28WR",
       },
     ],
   },

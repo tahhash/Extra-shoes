@@ -104,12 +104,12 @@ const ProductIntro = ({ product }) => {
           <H1 mb={1}>{title}</H1>
 
           <FlexBox alignItems="center" mb={1}>
-            <Box>Brand:</Box>
-            <H6>Xiaomi</H6>
+            <Box>:العلامة التجارية</Box>
+            <H6>Nike</H6>
           </FlexBox>
 
           <FlexBox alignItems="center" mb={2}>
-            <Box lineHeight="1">Rated:</Box>
+            <Box lineHeight="1">:تصنيف</Box>
             <Box mx={1} lineHeight="1">
               <BazaarRating
                 color="warn"
@@ -149,7 +149,7 @@ const ProductIntro = ({ product }) => {
             <H2 color="primary.main" mb={0.5} lineHeight="1">
               {currency(price)}
             </H2>
-            <Box color="inherit">Stock Available</Box>
+            <Box color="inherit">المخزون المتاح</Box>
           </Box>
 
           {!cartItem?.qty ? (
@@ -163,7 +163,7 @@ const ProductIntro = ({ product }) => {
                 height: 40,
               }}
             >
-              Add to Cart
+              إضافة إلى السلة
             </Button>
           ) : (
             <FlexBox alignItems="center" mb={4.5}>
@@ -198,9 +198,9 @@ const ProductIntro = ({ product }) => {
           )}
 
           <FlexBox alignItems="center" gap={1} mb={2}>
-            <Box>Sold By:</Box>
+            <Box>:تم بيعه بواسطة</Box>
             <Link href="/shops/scarlett-beauty">
-              <H6>Mobile Store</H6>
+              <H6>Nike</H6>
             </Link>
           </FlexBox>
         </Grid>

@@ -35,13 +35,13 @@ const ProductReview = () => {
       ))}
 
       <H2 fontWeight="600" mt={7} mb={2.5}>
-        Write a Review for this product
+      كتابة مراجعة لهذا المنتج
       </H2>
 
       <form onSubmit={handleSubmit}>
         <Box mb={2.5}>
           <FlexBox mb={1.5} gap={0.5}>
-            <H5 color="grey.700">Your Rating</H5>
+            <H5 color="grey.700">تقييمك</H5>
             <H5 color="error.main">*</H5>
           </FlexBox>
 
@@ -55,7 +55,7 @@ const ProductReview = () => {
 
         <Box mb={3}>
           <FlexBox mb={1.5} gap={0.5}>
-            <H5 color="grey.700">Your Review</H5>
+            <H5 color="grey.700">مراجعتك</H5>
             <H5 color="error.main">*</H5>
           </FlexBox>
 
@@ -68,7 +68,7 @@ const ProductReview = () => {
             onBlur={handleBlur}
             value={values.comment}
             onChange={handleChange}
-            placeholder="Write a review here..."
+            placeholder="...يرجى كتابة مراجعتك هنا"
             error={!!touched.comment && !!errors.comment}
             helperText={touched.comment && errors.comment}
           />
@@ -80,7 +80,7 @@ const ProductReview = () => {
           type="submit"
           disabled={!(dirty && isValid)}
         >
-          Submit
+          إرسال
         </Button>
       </form>
     </Box>
@@ -88,7 +88,7 @@ const ProductReview = () => {
 };
 const commentList = [
   {
-    name: "Jannie Schumm",
+    name: "جاني شوم",
     imgUrl: "/assets/images/faces/7.png",
     rating: 4.7,
     date: "2021-02-14",
@@ -96,7 +96,7 @@ const commentList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius massa id ut mattis. Facilisis vitae gravida egestas ac account.",
   },
   {
-    name: "Joe Kenan",
+    name: "جو كينان",
     imgUrl: "/assets/images/faces/6.png",
     rating: 4.7,
     date: "2019-08-10",
@@ -104,7 +104,7 @@ const commentList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius massa id ut mattis. Facilisis vitae gravida egestas ac account.",
   },
   {
-    name: "Jenifer Tulio",
+    name: "جينيفر توليو",
     imgUrl: "/assets/images/faces/8.png",
     rating: 4.7,
     date: "2021-02-05",

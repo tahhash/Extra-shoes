@@ -5,8 +5,6 @@ import { H2 } from "components/Typography";
 import ShopLayout1 from "components/layouts/ShopLayout1";
 import ProductIntro from "pages-sections/product-details/ProductIntro";
 import ProductReview from "pages-sections/product-details/ProductReview";
-import AvailableShops from "pages-sections/product-details/AvailableShops";
-import RelatedProducts from "pages-sections/product-details/RelatedProducts";
 import FrequentlyBought from "pages-sections/product-details/FrequentlyBought";
 import ProductDescription from "pages-sections/product-details/ProductDescription";
 import {
@@ -72,9 +70,6 @@ const ProductDetails = (props) => {
           <FrequentlyBought productsData={frequentlyBought} />
         )}
 
-        <AvailableShops />
-
-        {relatedProducts && <RelatedProducts productsData={relatedProducts} />}
       </Container>
     </ShopLayout1>
   );
