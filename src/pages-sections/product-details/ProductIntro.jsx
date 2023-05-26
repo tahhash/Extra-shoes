@@ -104,12 +104,12 @@ const ProductIntro = ({ product }) => {
           <H1 mb={1}>{title}</H1>
 
           <FlexBox alignItems="center" mb={1}>
-            <Box>:العلامة التجارية</Box>
             <H6>Nike</H6>
+            <Box>:العلامة التجارية</Box>
           </FlexBox>
 
           <FlexBox alignItems="center" mb={2}>
-            <Box lineHeight="1">:تصنيف</Box>
+            <H6 lineHeight="1">(50)</H6>
             <Box mx={1} lineHeight="1">
               <BazaarRating
                 color="warn"
@@ -118,7 +118,7 @@ const ProductIntro = ({ product }) => {
                 readOnly
               />
             </Box>
-            <H6 lineHeight="1">(50)</H6>
+            <Box lineHeight="1">:تصنيف</Box>
           </FlexBox>
 
           {productVariants.map((variant) => (
@@ -198,10 +198,10 @@ const ProductIntro = ({ product }) => {
           )}
 
           <FlexBox alignItems="center" gap={1} mb={2}>
-            <Box>:تم بيعه بواسطة</Box>
             <Link href="/shops/scarlett-beauty">
               <H6>Nike</H6>
             </Link>
+            <Box>:تم بيعه بواسطة</Box>
           </FlexBox>
         </Grid>
       </Grid>
