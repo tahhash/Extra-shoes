@@ -19,10 +19,10 @@ import VendorDashboardLayout from "components/layouts/vendor-dashboard";
 const INITIAL_VALUES = {
   order: 10,
   category: "fashion",
-  shopName: "The Icon Style",
-  shopPhone: "+123 4567 8910",
-  shopAddress: "4990 Hide A Way Road Santa Clara, CA 95050.",
-  description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
+  shopName: "Big Shoes",
+  shopPhone: "0541 14 98 28",
+  shopAddress: "Rue de la basilique 357/13",
+  description: `مرحبًا بك في "إكسترا"، وجهتك النهائية لمقاسات الأحذية الكبيرة. نحن متخصصون في تقديم أحذية أنيقة للرجال والنساء ذوي الأقدام الكبيرة. تشمل تشكيلتنا الواسعة من الأحذية الكبيرة إضافة مضمونة للراحة والأناقة دون التنازل عن الجودة. استكشف مجموعتنا اليوم واعثر على الزوج المثالي الذي يتناسب مع أناقتك ومقاسك الفريد. اخطو نحو الثقة مع إكسترا`,
 };
 const validationSchema = Yup.object().shape({
   shopName: Yup.string().required("Shop Name is required!"),

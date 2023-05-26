@@ -93,6 +93,8 @@ export const hotDealsData = [
 
 // products
 export const products = [
+
+  //Flash
   {
     id: "56b18419-a114-4d73-8725-48fa10823479",
     slug: "smart-watch-black",
