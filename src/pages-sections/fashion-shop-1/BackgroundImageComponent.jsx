@@ -35,14 +35,11 @@ const BackgroundImageComponent = () => {
     >
       <div
         style={{
-          backgroundImage: 'url("/homepage.jpg")',
-          backgroundSize: '100% auto', // Set backgroundSize to maintain aspect ratio
-          backgroundPosition: 'center',
-          width: '100%',
-          height: '100%',
           position: 'absolute',
           top: 0,
           left: 0,
+          width: '100%',
+          height: '100%',
           zIndex: -1, // Set z-index to move the background behind other content
         }}
       ></div>
@@ -61,6 +58,15 @@ const BackgroundImageComponent = () => {
       >
         اعثر على المقاس المثالي لقدميك
       </h2>
+      <div
+        style={{
+          backgroundImage: 'url("/homepage.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100%',
+          height: '100%',
+        }}
+      ></div>
     </div>
   );
 };
