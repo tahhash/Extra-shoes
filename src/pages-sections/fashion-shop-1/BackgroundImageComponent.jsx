@@ -53,7 +53,7 @@ const BackgroundImageComponent = () => {
             style={{
               position: 'absolute',
               top: '50%',
-              left: '50%',
+              left: '33%',
               transform: 'translate(-50%, -50%)',
               color: 'white',
               zIndex: 1,
