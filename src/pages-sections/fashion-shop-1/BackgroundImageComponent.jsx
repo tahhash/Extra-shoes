@@ -25,7 +25,7 @@ const BackgroundImageComponent = () => {
     <div
       style={{
         backgroundImage: 'url("/homepage.jpg")',
-        backgroundSize: 'cover',
+        backgroundSize: '100% 100%', // Set backgroundSize to fixed values
         backgroundPosition: 'center',
         height: '70vh',
         display: 'flex',
