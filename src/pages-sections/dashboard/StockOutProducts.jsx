@@ -35,10 +35,10 @@ const StockOutProducts = ({ data }) => {
       }}
     >
       <FlexBetween px={3} py={2.5}>
-        <H5>Stock Out Products</H5>
+        <H5>المنتجات غير متوفرة في المخزون</H5>
 
         <Button size="small" color="info" variant="outlined">
-          All Products
+        جميع المنتجات
         </Button>
       </FlexBetween>
 

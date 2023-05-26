@@ -15,17 +15,16 @@ const WishCard = () => {
       }}
     >
       <H5 color="info.main" mb={0.5}>
-        Good Morning, Maruf!
+      صباح الخير، هشام
       </H5>
       <Paragraph color="grey.600">
-        Here’s what happening with your store today!
-      </Paragraph>
+      إليك ما يحدث في متجرك اليوم!      </Paragraph>
 
       <H3 mt={3}>15,350.25</H3>
-      <Paragraph color="grey.600">Today’s Visit</Paragraph>
+      <Paragraph color="grey.600">عدد الزيارات اليومية</Paragraph>
 
       <H3 mt={1.5}>{currency(10360.66)}</H3>
-      <Paragraph color="grey.600">Today’s total sales</Paragraph>
+      <Paragraph color="grey.600">إجمالي المبيعات اليومية</Paragraph>
 
       <Box
         sx={{

@@ -137,17 +137,7 @@ const DashboardSidebar = (props) => {
         open={showMobileSideBar ? true : false}
         onClose={setShowMobileSideBar}
       >
-        <Box p={2} maxHeight={TOP_HEADER_AREA}>
-          <Image
-            alt="Logo"
-            width={105}
-            height={50}
-            src="/assets/images/logo.svg"
-            style={{
-              marginLeft: 8,
-            }}
-          />
-        </Box>
+        
 
         {content}
       </LayoutDrawer>
@@ -164,18 +154,7 @@ const DashboardSidebar = (props) => {
         maxHeight={TOP_HEADER_AREA}
         justifyContent={COMPACT ? "center" : "space-between"}
       >
-        <Avatar
-          src={
-            COMPACT
-              ? "/assets/images/bazaar-white-sm.svg"
-              : "/assets/images/logo.svg"
-          }
-          sx={{
-            borderRadius: 0,
-            width: "auto",
-            marginLeft: COMPACT ? 0 : 1,
-          }}
-        />
+        
 
         <ChevronLeftIcon
           color="disabled"

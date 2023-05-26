@@ -9,13 +9,13 @@ const Section3 = () => {
   // weekly chart series
   const series = [
     {
-      name: "Weekly",
+      name: "أسبوعيًا",
       data: [7600, 8500, 10100, 9800, 8700, 1050, 9100],
     },
   ];
   const totalOrderSeries = [
     {
-      name: "Weekly",
+      name: "أسبوعيًا",
       data: [7600, 8500, 10100, 9800, 8700, 1050, 9100],
     },
   ];
@@ -25,7 +25,7 @@ const Section3 = () => {
         {/* WEEKLY SALE CHART */}
         <Grid item xl={3} lg={3} md={6} xs={12}>
           <Card2
-            title="Weekly Sales"
+            title="المبيعات الأسبوعية"
             percentage="25.25%"
             amount={currency(10240, 0)}
           >
@@ -40,7 +40,7 @@ const Section3 = () => {
 
         {/* PRODUCT SHARE CHART */}
         <Grid item xl={3} lg={3} md={6} xs={12}>
-          <Card2 title="Product Share" percentage="10.25%" amount="39.56%">
+          <Card2 title="حصة المنتج" percentage="10.25%" amount="39.56%">
             <ApexChart
               height={130}
               series={[75]}
@@ -53,7 +53,7 @@ const Section3 = () => {
         {/* TOTAL ORDERS CHART */}
         <Grid item xl={3} lg={3} md={6} xs={12}>
           <Card2
-            title="Total Order"
+            title="إجمالي الطلبات"
             percentage="2.65%"
             amount={currency(12260, 0)}
           >
@@ -69,7 +69,7 @@ const Section3 = () => {
         {/* MARKET SHARE CHART */}
         <Grid item xl={3} lg={3} md={6} xs={12}>
           <Card2
-            title="Market Share"
+            title="حصة السوق"
             percentage="2.65%"
             amount={currency(14260, 0)}
           >

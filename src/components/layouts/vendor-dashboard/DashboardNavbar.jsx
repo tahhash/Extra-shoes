@@ -84,7 +84,7 @@ const DashboardNavbar = ({ handleDrawerToggle }) => {
               />
             }
           >
-            Browse Website
+            تصفح الموقع
           </CustomButton>
 
           <Box flexGrow={1} />

@@ -35,10 +35,10 @@ const RecentPurchase = ({ data }) => {
   return (
     <Card>
       <FlexBetween px={3} py={2.5}>
-        <H5>Recent Purchases</H5>
+        <H5>المشتريات الأخيرة</H5>
 
         <Button size="small" color="info" variant="outlined">
-          All Orders
+        جميع الطلبات
         </Button>
       </FlexBetween>
 
