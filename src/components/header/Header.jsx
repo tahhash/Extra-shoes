@@ -40,7 +40,7 @@ const StyledContainer = styled(Container)({
 });
 const currentHeight = 44;
 const newHeight = Math.round(currentHeight * 1.5);
-const newWidth = Math.round(newHeight * aspectRatio);
+const newWidth = Math.round(newHeight * 2.25);
 
 
 // ==============================================================
