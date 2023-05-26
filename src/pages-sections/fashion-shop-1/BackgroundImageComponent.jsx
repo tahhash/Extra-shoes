@@ -61,7 +61,7 @@ const BackgroundImageComponent = () => {
       <div
         style={{
           backgroundImage: 'url("/homepage.jpg")',
-          backgroundSize: 'cover',
+          backgroundSize: '100% 100%',
           backgroundPosition: 'center',
           width: '100%',
           height: '100%',
