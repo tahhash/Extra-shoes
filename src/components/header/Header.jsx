@@ -38,9 +38,6 @@ const StyledContainer = styled(Container)({
   alignItems: "center",
   justifyContent: "space-between",
 });
-const currentHeight = 44;
-const newHeight = Math.round(currentHeight * 1.5);
-const newWidth = Math.round(newHeight * aspectRatio);
 
 
 // ==============================================================
