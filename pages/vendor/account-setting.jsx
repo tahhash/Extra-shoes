@@ -76,7 +76,7 @@ export default function AccountSetting() {
   };
   return (
     <Box py={4}>
-      <H3 mb={2}>Account Setting</H3>
+      <H3 mb={2}>إعدادات الحساب</H3>
 
       <Card
         sx={{
@@ -150,7 +150,7 @@ export default function AccountSetting() {
                       color="info"
                       size="medium"
                       name="first_name"
-                      label="First Name"
+                      label="الاسم"
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.first_name}
@@ -165,7 +165,7 @@ export default function AccountSetting() {
                       color="info"
                       size="medium"
                       name="last_name"
-                      label="Last Name"
+                      label="اللقب"
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.last_name}
@@ -180,7 +180,7 @@ export default function AccountSetting() {
                       color="info"
                       name="email"
                       type="email"
-                      label="Email"
+                      label="البريد الإلكتروني"
                       size="medium"
                       onBlur={handleBlur}
                       value={values.email}
@@ -197,7 +197,7 @@ export default function AccountSetting() {
                       color="info"
                       size="medium"
                       name="contact"
-                      label="Phone"
+                      label="رقم الهاتف"
                       onBlur={handleBlur}
                       value={values.contact}
                       onChange={handleChange}
@@ -206,34 +206,12 @@ export default function AccountSetting() {
                     />
                   </Grid>
 
-                  <Grid item md={6} xs={12}>
-                    <Autocomplete
-                      fullWidth
-                      disablePortal
-                      options={countryList}
-                      value={values.country}
-                      getOptionLabel={(option) => option.label}
-                      onChange={(_, value) => setFieldValue("country", value)}
-                      renderInput={(params) => (
-                        <TextField
-                          color="info"
-                          label="Country"
-                          variant="outlined"
-                          placeholder="Select Country"
-                          error={!!touched.country && !!errors.country}
-                          helperText={touched.country && errors.country}
-                          {...params}
-                          size="medium"
-                        />
-                      )}
-                    />
-                  </Grid>
 
                   <Grid item md={6} xs={12}>
                     <TextField
                       fullWidth
                       name="city"
-                      label="City"
+                      label="المدينة"
                       color="info"
                       size="medium"
                       onBlur={handleBlur}
@@ -247,7 +225,7 @@ export default function AccountSetting() {
               </Box>
 
               <Button type="submit" variant="contained" color="info">
-                Save Changes
+              حفظ التغييرات
               </Button>
             </form>
           )}
