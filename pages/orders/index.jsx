@@ -18,7 +18,7 @@ const Orders = ({ orderList }) => {
     <CustomerDashboardLayout>
       {/* TITLE HEADER AREA */}
       <UserDashboardHeader
-        title="My Orders"
+        title="طلباتي"
         icon={ShoppingBag}
         navigation={<CustomerDashboardNavigation />}
       />
@@ -36,19 +36,19 @@ const Orders = ({ orderList }) => {
         }}
       >
         <H5 color="grey.600" my={0} mx={0.75} textAlign="left">
-          Order #
+          رقم الطلب
         </H5>
 
         <H5 color="grey.600" my={0} mx={0.75} textAlign="left">
-          Status
+          الحالة
         </H5>
 
         <H5 color="grey.600" my={0} mx={0.75} textAlign="left">
-          Date purchased
+          تاريخ الشراء
         </H5>
 
         <H5 color="grey.600" my={0} mx={0.75} textAlign="left">
-          Total
+          الإجمالي
         </H5>
 
         <H5

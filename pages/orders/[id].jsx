@@ -148,7 +148,7 @@ const OrderDetails = ({ order }) => {
             color="primary.main"
             bgcolor="primary.light"
           >
-            Estimated Delivery Date <b>4th October</b>
+            تاريخ التسليم المتوقع <b>4 أكتوبر</b>
           </Typography>
         </FlexBox>
       </Card>
@@ -170,7 +170,7 @@ const OrderDetails = ({ order }) => {
         >
           <FlexBox className="pre" m={0.75} alignItems="center">
             <Typography fontSize={14} color="grey.600" mr={0.5}>
-              Order ID:
+            رقم الطلب:
             </Typography>
 
             <Typography fontSize={14}>{order.id}</Typography>
@@ -178,7 +178,7 @@ const OrderDetails = ({ order }) => {
 
           <FlexBox className="pre" m={0.75} alignItems="center">
             <Typography fontSize={14} color="grey.600" mr={0.5}>
-              Placed on:
+            تاريخ الطلب:
             </Typography>
 
             <Typography fontSize={14}>
@@ -225,13 +225,13 @@ const OrderDetails = ({ order }) => {
 
               <FlexBox flex="1 1 260px" m={0.75} alignItems="center">
                 <Typography fontSize="14px" color="grey.600">
-                  Product properties: Black, L
+                خصائص المنتج: 
                 </Typography>
               </FlexBox>
 
               <FlexBox flex="160px" m={0.75} alignItems="center">
                 <Button variant="text" color="primary">
-                  <Typography fontSize="14px">Write a Review</Typography>
+                  <Typography fontSize="14px">كتابة تقييم</Typography>
                 </Button>
               </FlexBox>
             </FlexBox>
@@ -248,7 +248,7 @@ const OrderDetails = ({ order }) => {
             }}
           >
             <H5 mt={0} mb={2}>
-              Shipping Address
+            عنوان الشحن
             </H5>
 
             <Paragraph fontSize={14} my={0}>
@@ -264,12 +264,12 @@ const OrderDetails = ({ order }) => {
             }}
           >
             <H5 mt={0} mb={2}>
-              Total Summary
+            ملخص الإجمالي
             </H5>
 
             <FlexBetween mb={1}>
               <Typography fontSize={14} color="grey.600">
-                Subtotal:
+              المجموع الفرعي:
               </Typography>
 
               <H6 my="0px">{currency(order.totalPrice)}</H6>
@@ -277,7 +277,7 @@ const OrderDetails = ({ order }) => {
 
             <FlexBetween mb={1}>
               <Typography fontSize={14} color="grey.600">
-                Shipping fee:
+              رسوم الشحن:
               </Typography>
 
               <H6 my="0px">{currency(0)}</H6>
@@ -285,7 +285,7 @@ const OrderDetails = ({ order }) => {
 
             <FlexBetween mb={1}>
               <Typography fontSize={14} color="grey.600">
-                Discount:
+              الخصم:
               </Typography>
 
               <H6 my="0px">{currency(order.discount)}</H6>
@@ -302,7 +302,7 @@ const OrderDetails = ({ order }) => {
               <H6 my="0px">{currency(order.totalPrice)}</H6>
             </FlexBetween>
 
-            <Typography fontSize={14}>Paid by Credit/Debit Card</Typography>
+            <Typography fontSize={14}>تم الدفع بالفعل عند الاستلام</Typography>
           </Card>
         </Grid>
       </Grid>
