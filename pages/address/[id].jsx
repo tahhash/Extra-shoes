@@ -41,7 +41,7 @@ const AddressEditor = ({ address }) => {
         px: 4,
       }}
     >
-      Back to Address
+      العودة إلى العنوان
     </Button>
   );
   return (
@@ -76,7 +76,7 @@ const AddressEditor = ({ address }) => {
                     <TextField
                       fullWidth
                       name="name"
-                      label="Name"
+                      label="الاسم"
                       onBlur={handleBlur}
                       value={values.name}
                       onChange={handleChange}
@@ -90,7 +90,7 @@ const AddressEditor = ({ address }) => {
                       fullWidth
                       name="address"
                       onBlur={handleBlur}
-                      label="Address Line"
+                      label="العنوان"
                       value={values.address}
                       onChange={handleChange}
                       error={!!touched.address && !!errors.address}
@@ -101,7 +101,7 @@ const AddressEditor = ({ address }) => {
                   <Grid item md={6} xs={12}>
                     <TextField
                       fullWidth
-                      label="Phone"
+                      label="الهاتف"
                       name="contact"
                       onBlur={handleBlur}
                       value={values.contact}
@@ -114,7 +114,7 @@ const AddressEditor = ({ address }) => {
               </Box>
 
               <Button type="submit" variant="contained" color="primary">
-                Save Changes
+              حفظ التغييرات
               </Button>
             </form>
           )}

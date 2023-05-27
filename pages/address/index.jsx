@@ -25,7 +25,7 @@ const AddressList = ({ addressList }) => {
         px: 4,
       }}
     >
-      Add New Address
+      إضافة عنوان جديد
     </Button>
   );
 
@@ -38,7 +38,7 @@ const AddressList = ({ addressList }) => {
       {/* TITLE HEADER AREA */}
       <UserDashboardHeader
         icon={Place}
-        title="My Addresses"
+        title="عناويني"
         button={HEADER_BUTTON}
         navigation={<CustomerDashboardNavigation />}
       />
