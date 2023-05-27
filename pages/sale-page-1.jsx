@@ -122,7 +122,7 @@ const SalePage1 = () => {
                   <StyledChip
                     size="small"
                     color="primary"
-                    label="Upto 40% off"
+                    label="خصم حتى 40%"
                     selected={selectedItem}
                   />
                 </CategoryBoxWrapper>
