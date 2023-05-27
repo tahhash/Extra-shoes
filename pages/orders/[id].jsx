@@ -64,7 +64,7 @@ const OrderDetails = ({ order }) => {
         px: 4,
       }}
     >
-      Order Again
+      أعد الطلب
     </Button>
   );
 
@@ -77,7 +77,7 @@ const OrderDetails = ({ order }) => {
       {/* TITLE HEADER AREA */}
       <UserDashboardHeader
         icon={ShoppingBag}
-        title="Order Details"
+        title="تفاصيل الطلب"
         navigation={<CustomerDashboardNavigation />}
         button={HEADER_BUTTON}
       />

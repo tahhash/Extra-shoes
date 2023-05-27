@@ -48,7 +48,7 @@ const ProfileEditor = ({ user }) => {
         bgcolor: "primary.light",
       }}
     >
-      Back to Profile
+      العودة إلى الصفحة الشخصية
     </Button>
   );
 
@@ -61,7 +61,7 @@ const ProfileEditor = ({ user }) => {
       {/* TITLE HEADER AREA */}
       <UserDashboardHeader
         icon={Person}
-        title="Edit Profile"
+        title="تعديل الملف الشخصي"
         button={HEADER_LINK}
         navigation={<CustomerDashboardNavigation />}
       />
@@ -125,7 +125,7 @@ const ProfileEditor = ({ user }) => {
                     <TextField
                       fullWidth
                       name="first_name"
-                      label="First Name"
+                      label="الاسم"
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.first_name}
@@ -138,7 +138,7 @@ const ProfileEditor = ({ user }) => {
                     <TextField
                       fullWidth
                       name="last_name"
-                      label="Last Name"
+                      label="اللقب"
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.last_name}
@@ -152,7 +152,7 @@ const ProfileEditor = ({ user }) => {
                       fullWidth
                       name="email"
                       type="email"
-                      label="Email"
+                      label="البريد الإلكتروني"
                       onBlur={handleBlur}
                       value={values.email}
                       onChange={handleChange}
@@ -164,7 +164,7 @@ const ProfileEditor = ({ user }) => {
                   <Grid item md={6} xs={12}>
                     <TextField
                       fullWidth
-                      label="Phone"
+                      label="الهاتف"
                       name="contact"
                       onBlur={handleBlur}
                       value={values.contact}
@@ -177,7 +177,7 @@ const ProfileEditor = ({ user }) => {
                   <Grid item md={6} xs={12}>
                     <LocalizationProvider dateAdapter={AdapterDateFns}>
                       <DatePicker
-                        label="Birth Date"
+                        label="تاريخ الميلاد"
                         // maxDate={new Date()}
                         value={addDays(parseISO(values.date), 1)}
                         onChange={(newValue) =>
@@ -207,7 +207,7 @@ const ProfileEditor = ({ user }) => {
               </Box>
 
               <Button type="submit" variant="contained" color="primary">
-                Save Changes
+              حفظ التغييرات
               </Button>
             </form>
           )}

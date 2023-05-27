@@ -16,7 +16,6 @@ import { FlexBetween, FlexBox } from "components/flex-box";
 import UserDashboardHeader from "components/header/UserDashboardHeader";
 import CustomerDashboardLayout from "components/layouts/customer-dashboard";
 import CustomerDashboardNavigation from "components/layouts/customer-dashboard/Navigations";
-import { currency } from "lib";
 import api from "utils/__api__/users";
 // ============================================================
 
@@ -34,7 +33,7 @@ const Profile = ({ user }) => {
         bgcolor: "primary.light",
       }}
     >
-      Edit Profile
+      تعديل الملف الشخصي
     </Button>
   );
   const infoList = [
@@ -60,7 +59,7 @@ const Profile = ({ user }) => {
       {/* TITLE HEADER AREA */}
       <UserDashboardHeader
         icon={Person}
-        title="My Profile"
+        title="ملفّي الشخصي"
         button={HEADER_LINK}
         navigation={<CustomerDashboardNavigation />}
       />
@@ -85,23 +84,7 @@ const Profile = ({ user }) => {
                 }}
               />
 
-              <Box ml={1.5} flex="1 1 0">
-                <FlexBetween flexWrap="wrap">
-                  <div>
-                    <H5 my="0px">{`${user.name.firstName} ${user.name.lastName}`}</H5>
-                    <FlexBox alignItems="center">
-                      <Typography color="grey.600">Balance:</Typography>
-                      <Typography ml={0.5} color="primary.main">
-                        {currency(500)}
-                      </Typography>
-                    </FlexBox>
-                  </div>
-
-                  <Typography color="grey.600" letterSpacing="0.2em">
-                    SILVER USER
-                  </Typography>
-                </FlexBetween>
-              </Box>
+              
             </Card>
           </Grid>
 
@@ -144,12 +127,12 @@ const Profile = ({ user }) => {
           }),
         }}
       >
-        <TableRowItem title="First Name" value={user.name.firstName} />
-        <TableRowItem title="Last Name" value={user.name.lastName} />
-        <TableRowItem title="Email" value={user.email} />
-        <TableRowItem title="Phone" value={user.phone} />
+        <TableRowItem title="الاسم" value={user.name.firstName} />
+        <TableRowItem title="اللقب" value={user.name.lastName} />
+        <TableRowItem title="البريد الإلكتروني" value={user.email} />
+        <TableRowItem title="الهاتف" value={user.phone} />
         <TableRowItem
-          title="Birth date"
+          title="تاريخ الميلاد"
           value={format(new Date(user.dateOfBirth), "dd MMM, yyyy")}
         />
       </TableRow>
