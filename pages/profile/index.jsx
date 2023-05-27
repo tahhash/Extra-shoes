@@ -16,6 +16,7 @@ import { FlexBetween, FlexBox } from "components/flex-box";
 import UserDashboardHeader from "components/header/UserDashboardHeader";
 import CustomerDashboardLayout from "components/layouts/customer-dashboard";
 import CustomerDashboardNavigation from "components/layouts/customer-dashboard/Navigations";
+import { currency } from "lib";
 import api from "utils/__api__/users";
 // ============================================================
 
@@ -84,7 +85,13 @@ const Profile = ({ user }) => {
                 }}
               />
 
-              
+              <Box ml={1.5} flex="1 1 0">
+                <FlexBetween flexWrap="wrap">
+                  <div>
+                    <H5 my="0px">{`${user.name.firstName} ${user.name.lastName}`}</H5>
+                  </div>
+                </FlexBetween>
+              </Box>
             </Card>
           </Grid>
 
