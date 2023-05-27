@@ -75,16 +75,16 @@ const linkList = [
     title: "لوحة التحكم",
     list: [
       {
-        href: "/orders",
-        title: "الطلبات",
-        icon: ShoppingBagOutlined,
-        count: 5,
-      },
-      {
         href: "/profile",
         title: "معلومات الملف الشخصي",
         icon: Person,
         count: "",
+      },
+      {
+        href: "/orders",
+        title: "الطلبات",
+        icon: ShoppingBagOutlined,
+        count: 5,
       },
       {
         href: "/address",
