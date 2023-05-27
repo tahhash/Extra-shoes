@@ -50,7 +50,7 @@ const EditAddressForm = (props) => {
     <Dialog open={openEditForm} onClose={() => setOpenEditForm(false)}>
       <DialogContent>
         <Typography variant="h6" mb={3}>
-          Edit Address Information
+        تعديل معلومات العنوان
         </Typography>
 
         <form onSubmit={formik.handleSubmit}>
@@ -61,7 +61,7 @@ const EditAddressForm = (props) => {
                   fullWidth
                   name="name"
                   type="text"
-                  label="Enter Your Name"
+                  label="أدخل اسمك"
                   value={formik.values.name}
                   onChange={formik.handleChange}
                   helperText={formik.touched.name && formik.errors.name}
@@ -73,7 +73,7 @@ const EditAddressForm = (props) => {
                   fullWidth
                   type="text"
                   name="address1"
-                  label="Address line 1"
+                  label="الشارع"
                   value={formik.values.address1}
                   onChange={formik.handleChange}
                   error={
@@ -87,23 +87,8 @@ const EditAddressForm = (props) => {
                 <TextField
                   fullWidth
                   type="text"
-                  name="address2"
-                  label="Address line 2"
-                  value={formik.values.address2}
-                  onChange={formik.handleChange}
-                  error={
-                    formik.touched.address2 && Boolean(formik.errors.address2)
-                  }
-                  helperText={formik.touched.address2 && formik.errors.address2}
-                />
-              </Grid>
-
-              <Grid item sm={6} xs={12}>
-                <TextField
-                  fullWidth
-                  type="text"
                   name="phone"
-                  label="Enter Your Phone"
+                  label="أدخل رقم هاتفك"
                   value={formik.values.phone}
                   onChange={formik.handleChange}
                   error={formik.touched.phone && Boolean(formik.errors.phone)}
@@ -114,7 +99,7 @@ const EditAddressForm = (props) => {
           </Box>
 
           <Button color="primary" variant="contained" type="submit">
-            Save
+          الرقم
           </Button>
         </form>
       </DialogContent>

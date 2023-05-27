@@ -6,7 +6,7 @@ const CheckoutSummary2 = () => {
   return (
     <Box>
       <Paragraph color="secondary.900" fontWeight={700} mb={2}>
-        Your order
+      طلبك
       </Paragraph>
 
       {cartList.map((item) => (
@@ -29,22 +29,22 @@ const CheckoutSummary2 = () => {
       />
 
       <FlexBetween mb={0.5}>
-        <Paragraph color="grey.600">Subtotal:</Paragraph>
+        <Paragraph color="grey.600">الإجمالي الفرعي:</Paragraph>
         <Paragraph fontWeight="700">{currency(2610)}</Paragraph>
       </FlexBetween>
 
       <FlexBetween mb={0.5}>
-        <Paragraph color="grey.600">Shipping:</Paragraph>
+        <Paragraph color="grey.600">الشحن:</Paragraph>
         <Paragraph fontWeight="700">-</Paragraph>
       </FlexBetween>
 
       <FlexBetween mb={0.5}>
-        <Paragraph color="grey.600">Tax:</Paragraph>
+        <Paragraph color="grey.600">الضريبة:</Paragraph>
         <Paragraph fontWeight="700">{currency(40)}</Paragraph>
       </FlexBetween>
 
       <FlexBetween mb={3}>
-        <Paragraph color="grey.600">Discount:</Paragraph>
+        <Paragraph color="grey.600">الخصم:</Paragraph>
         <Paragraph fontWeight="700">-</Paragraph>
       </FlexBetween>
 
@@ -56,7 +56,7 @@ const CheckoutSummary2 = () => {
       />
 
       <FlexBetween fontWeight="700" mb={1}>
-        <Paragraph>Total:</Paragraph>
+        <Paragraph>الإجمالي:</Paragraph>
         <Paragraph fontWeight="700">{currency(2650)}</Paragraph>
       </FlexBetween>
     </Box>
@@ -64,17 +64,17 @@ const CheckoutSummary2 = () => {
 };
 const cartList = [
   {
-    name: "iPhone 12",
+    name: "Dunham 8000 Mid Boot Dark Brown",
     quantity: 1,
     price: 999,
   },
   {
-    name: "iPhone 12 pro",
+    name: "Dunham Cloud Plus Low Vicuna",
     quantity: 1,
     price: 1199,
   },
   {
-    name: "iPhone 12 pro max",
+    name: "Dunham Battery Park Service Black",
     quantity: 1,
     price: 1299,
   },

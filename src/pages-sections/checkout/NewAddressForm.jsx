@@ -20,14 +20,14 @@ const checkoutSchema = yup.object({
   zip: yup.number().required("required"),
 });
 const initialValues = {
-  name: "UI Lib",
-  street1: "321, Subid Bazaar",
+  name: "",
+  street1: "",
   street2: "",
-  phone: "01789123456",
-  city: "Sylhet",
-  state: "Sylhet",
-  country: "Bangladesh",
-  zip: 4336,
+  phone: "",
+  city: "",
+  state: "",
+  country: "",
+  zip: "",
 };
 
 // ==================================================================
@@ -59,13 +59,13 @@ const NewAddressForm = ({ setNewAddress }) => {
           addCardForm ? setAddCardForm(false) : setAddCardForm(true)
         }
       >
-        Add New Address
+        إضافة عنوان جديد
       </Button>
 
       <Dialog open={addCardForm} onClose={() => setAddCardForm(false)}>
         <DialogContent>
           <Typography variant="h6" mb={3}>
-            Add New Address Information
+          إضافة معلومات عنوان جديد
           </Typography>
 
           <form onSubmit={handleSubmit}>
@@ -76,7 +76,7 @@ const NewAddressForm = ({ setNewAddress }) => {
                   type="text"
                   name="name"
                   value={values.name}
-                  label="Enter Your Name"
+                  label="أدخل اسمك"
                   onChange={handleChange}
                   helperText={touched.name && errors.name}
                   error={touched.name && Boolean(errors.name)}
@@ -87,7 +87,7 @@ const NewAddressForm = ({ setNewAddress }) => {
                   fullWidth
                   type="text"
                   name="street1"
-                  label="Street line 1"
+                  label="الشارع"
                   value={values.street1}
                   onChange={handleChange}
                   helperText={touched.street1 && errors.street1}
@@ -95,27 +95,15 @@ const NewAddressForm = ({ setNewAddress }) => {
                 />
               </Grid>
 
-              <Grid item sm={6} xs={12}>
-                <TextField
-                  fullWidth
-                  type="text"
-                  name="street2"
-                  label="Address line 2"
-                  value={values.street2}
-                  onChange={handleChange}
-                  helperText={touched.street2 && errors.street2}
-                  error={touched.street2 && Boolean(errors.street2)}
-                />
-              </Grid>
 
               <Grid item sm={6} xs={12}>
                 <TextField
                   fullWidth
                   type="text"
-                  name="phone"
+                  name="الهاتف"
                   value={values.phone}
                   onChange={handleChange}
-                  label="Enter Your Phone"
+                  label="أدخل رقم هاتفك"
                   error={touched.phone && Boolean(errors.phone)}
                   helperText={touched.phone && errors.phone}
                 />
@@ -125,7 +113,7 @@ const NewAddressForm = ({ setNewAddress }) => {
                 <TextField
                   fullWidth
                   name="city"
-                  label="City"
+                  label="المدينة"
                   value={values.city}
                   onChange={handleChange}
                   helperText={touched.city && errors.city}
@@ -137,7 +125,7 @@ const NewAddressForm = ({ setNewAddress }) => {
                 <TextField
                   fullWidth
                   name="state"
-                  label="State"
+                  label="الولاية"
                   value={values.state}
                   onChange={handleChange}
                   helperText={touched.state && errors.state}
@@ -149,8 +137,8 @@ const NewAddressForm = ({ setNewAddress }) => {
                 <TextField
                   fullWidth
                   name="zip"
-                  label="Zip"
-                  type="number"
+                  label="الرمز البريدي"
+                  type="text"
                   value={values.zip}
                   onChange={handleChange}
                   helperText={touched.zip && errors.zip}
@@ -158,21 +146,10 @@ const NewAddressForm = ({ setNewAddress }) => {
                 />
               </Grid>
 
-              <Grid item sm={6} xs={12}>
-                <TextField
-                  fullWidth
-                  name="country"
-                  label="Country"
-                  value={values.country}
-                  onChange={handleChange}
-                  helperText={touched.country && errors.country}
-                  error={touched.country && Boolean(errors.country)}
-                />
-              </Grid>
-
+              
               <Grid item sm={6} xs={12}>
                 <Button color="primary" variant="contained" type="submit">
-                  Save
+                حفظ
                 </Button>
               </Grid>
             </Grid>

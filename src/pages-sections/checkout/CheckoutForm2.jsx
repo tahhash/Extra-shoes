@@ -120,56 +120,7 @@ const CheckoutForm2 = () => {
         setFieldValue,
       }) => (
         <form onSubmit={handleSubmit}>
-          <Card1
-            sx={{
-              mb: 3,
-            }}
-          >
-            <Heading number={1} title="Delivery Date and Time" />
-
-            <Box mb={3.5}>
-              <Grid container spacing={3}>
-                <Grid item sm={6} xs={12}>
-                  <TextField
-                    select
-                    fullWidth
-                    type="text"
-                    name="date"
-                    label="Delivery Date"
-                    onChange={handleChange}
-                    value={values.date}
-                    error={!!touched.date && !!errors.date}
-                    helperText={touched.date && errors.date}
-                  >
-                    {dateList.map((item) => (
-                      <MenuItem value={item.value} key={item.label}>
-                        {item.label}
-                      </MenuItem>
-                    ))}
-                  </TextField>
-                </Grid>
-                <Grid item sm={6} xs={12}>
-                  <TextField
-                    select
-                    fullWidth
-                    type="text"
-                    name="time"
-                    label="Delivery Time"
-                    onChange={handleChange}
-                    value={values.time}
-                    error={!!touched.time && !!errors.time}
-                    helperText={touched.time && errors.time}
-                  >
-                    {timeList.map((item) => (
-                      <MenuItem value={item.value} key={item.value}>
-                        {item.value}
-                      </MenuItem>
-                    ))}
-                  </TextField>
-                </Grid>
-              </Grid>
-            </Box>
-          </Card1>
+          
 
           <Card1
             sx={{
@@ -177,12 +128,12 @@ const CheckoutForm2 = () => {
             }}
           >
             <FlexBetween>
-              <Heading number={2} title="Delivery Address" />
+              <Heading number={1} title="عنوان التوصيل" />
 
               <NewAddressForm setNewAddress={setNewAddress} />
             </FlexBetween>
 
-            <Typography mb={1.5}>Delivery Address</Typography>
+            <Typography mb={1.5}>عنوان التوصيل</Typography>
             <Grid container spacing={3}>
               {addressData.map((item, ind) => (
                 <Grid item md={4} sm={6} xs={12} key={ind}>
@@ -266,138 +217,16 @@ const CheckoutForm2 = () => {
               mb: 3,
             }}
           >
-            <Heading number={3} title="Payment Details" />
-
-            <Box mb={3.5}>
-              <Typography mb={1.5}>Enter Card Information</Typography>
-              <Grid container spacing={3}>
-                <Grid item sm={6} xs={12}>
-                  <TextField
-                    fullWidth
-                    type="text"
-                    name="cardHolderName"
-                    onChange={handleChange}
-                    label="Enter Your Name"
-                    value={values.cardHolderName}
-                    error={!!touched.cardHolderName && !!errors.cardHolderName}
-                    helperText={touched.cardHolderName && errors.cardHolderName}
-                  />
-                </Grid>
-                <Grid item sm={6} xs={12}>
-                  <TextField
-                    fullWidth
-                    type="number"
-                    name="cardNumber"
-                    onChange={handleChange}
-                    label="Enter Your Card Number"
-                    value={values.cardNumber}
-                    error={!!touched.cardNumber && !!errors.cardNumber}
-                    helperText={touched.cardNumber && errors.cardNumber}
-                  />
-                </Grid>
-                <Grid item sm={12} xs={12}>
-                  <Box display="flex" justifyContent="space-between">
-                    <TextField
-                      select
-                      fullWidth
-                      type="number"
-                      name="cardMonth"
-                      onChange={handleChange}
-                      label="Expire Card Month"
-                      value={values.cardMonth}
-                      error={!!touched.cardMonth && !!errors.cardMonth}
-                      helperText={touched.cardMonth && errors.cardMonth}
-                    >
-                      {months.map((item) => (
-                        <MenuItem value={item} key={item}>
-                          {item}
-                        </MenuItem>
-                      ))}
-                    </TextField>
-                    <TextField
-                      select
-                      fullWidth
-                      type="number"
-                      name="cardYear"
-                      onChange={handleChange}
-                      label="Expire Card Year"
-                      value={values.cardYear}
-                      error={!!touched.cardYear && !!errors.cardYear}
-                      helperText={touched.cardYear && errors.cardYear}
-                      sx={{
-                        mx: 3,
-                      }}
-                    >
-                      {years.map((item) => (
-                        <MenuItem value={item} key={item}>
-                          {item}
-                        </MenuItem>
-                      ))}
-                    </TextField>
-                    <TextField
-                      fullWidth
-                      type="number"
-                      name="cardCVC"
-                      label="CVC/CVV"
-                      onChange={handleChange}
-                      value={values.cardCVC}
-                      error={!!touched.cardCVC && !!errors.cardCVC}
-                      helperText={touched.cardCVC && errors.cardCVC}
-                    />
-                  </Box>
-                </Grid>
-              </Grid>
-              <FormControlLabel
-                sx={{
-                  mt: 1,
-                }}
-                control={<Checkbox />}
-                label="Save this card"
-              />
-            </Box>
-
-            <Box>
-              <Typography mb={1.5}>Saved Cards</Typography>
-
-              <Grid container spacing={3}>
-                {paymentMethodList.map((item) => (
-                  <Grid item md={4} sm={6} xs={12} key={item.last4Digits}>
-                    <Card
-                      onClick={handleFieldValueChange(
-                        item.last4Digits,
-                        "card",
-                        setFieldValue
-                      )}
-                      sx={{
-                        padding: 2,
-                        boxShadow: "none",
-                        cursor: "pointer",
-                        border: "1px solid",
-                        backgroundColor: "grey.100",
-                        borderColor:
-                          item.last4Digits === values.card
-                            ? "primary.main"
-                            : "transparent",
-                      }}
-                    >
-                      <Box height={24} width={36} position="relative" mb={1}>
-                        <LazyImage
-                          fill
-                          alt={item.name}
-                          src={`/assets/images/payment-methods/${item.cardType}.svg`}
-                        />
-                      </Box>
-
-                      <Paragraph color="grey.700">
-                        **** **** **** {item.last4Digits}
-                      </Paragraph>
-                      <Paragraph color="grey.700">{item.name}</Paragraph>
-                    </Card>
-                  </Grid>
-                ))}
-              </Grid>
-            </Box>
-
+            <Heading number={2} title="تفاصيل الدفع" />
+            <Button
+              sx={{
+                color: "primary.main",
+                mt: 3,
+                lineHeight: 1,
+              }}
+            >
+              الدفع عند التسليم
+            </Button>
             <Button
               sx={{
                 color: "primary.main",
@@ -406,7 +235,7 @@ const CheckoutForm2 = () => {
               }}
               onClick={toggleHasVoucher}
             >
-              I have a voucher
+              لدي قسيمة
             </Button>
 
             {hasVoucher && (
@@ -416,10 +245,10 @@ const CheckoutForm2 = () => {
                   name="voucher"
                   value={values.voucher}
                   onChange={handleChange}
-                  placeholder="Enter voucher code here"
+                  placeholder="أدخل رمز القسيمة هنا"
                 />
                 <Button variant="contained" color="primary" type="button">
-                  Apply
+                تطبيق
                 </Button>
               </FlexBox>
             )}
@@ -433,7 +262,7 @@ const CheckoutForm2 = () => {
                 mt: 3,
               }}
             >
-              Place Order
+              إتمام الطلب
             </Button>
           </Card1>
         </form>
@@ -444,21 +273,13 @@ const CheckoutForm2 = () => {
 const addressList2 = [
   {
     name: "Home",
-    phone: "+17804084466",
-    street2: "435 Bristol, MA 2351",
-    street1: "375 Subidbazaar, MA 2351",
+    phone: "0541149828",
+    street1: "Rue de la basilique 357/13",
   },
   {
     name: "Office",
-    phone: "+18334271710",
-    street2: "968 Brockton, MA 2351",
-    street1: "645 Bondorbazaar, MA 2351",
-  },
-  {
-    name: "Office 2",
-    phone: "+17754739407",
-    street2: "777 Kazi, MA 2351",
-    street1: "324 Ambarkhana, MA 2351",
+    phone: "+037565392",
+    street1: "Rue Mouhamed Sbiki 120/18",
   },
 ];
 const paymentMethodList = [
