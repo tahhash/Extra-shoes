@@ -26,7 +26,7 @@ const FooterForm = () => {
             <Grid item xs={12}>
               <DropZone
                 onChange={(files) => console.log(files)}
-                title="Drag & Drop Footer Logo"
+                title="اسحب وأسقط شعار التذييل هنا"
               />
             </Grid>
 
@@ -40,7 +40,7 @@ const FooterForm = () => {
                 onBlur={handleBlur}
                 onChange={handleChange}
                 name="footer_description"
-                label="Footer Description"
+                label="وصف التذييل"
                 value={values.footer_description}
               />
             </Grid>
@@ -55,7 +55,7 @@ const FooterForm = () => {
                 <Fragment>
                   <Grid item xs={12}>
                     <FlexBetween>
-                      <H4>Second Column Content</H4>
+                      <H4>محتوى العمود الثاني</H4>
 
                       <Button
                         color="info"
@@ -68,7 +68,7 @@ const FooterForm = () => {
                           });
                         }}
                       >
-                        Add Item
+                        إضافة عنصر
                       </Button>
                     </FlexBetween>
                   </Grid>
@@ -79,7 +79,7 @@ const FooterForm = () => {
                       color="info"
                       size="medium"
                       onBlur={handleBlur}
-                      label="Heading Name"
+                      label="اسم العنوان"
                       onChange={handleChange}
                       name="column_two_heading"
                       value={values.column_two_heading}
@@ -91,7 +91,7 @@ const FooterForm = () => {
                       <Grid item xs={5}>
                         <TextField
                           fullWidth
-                          label="Name"
+                          label="الاسم"
                           color="info"
                           size="medium"
                           value={item.name}
@@ -104,7 +104,7 @@ const FooterForm = () => {
                       <Grid item xs={5}>
                         <TextField
                           fullWidth
-                          label="Link"
+                          label="الرابط"
                           color="info"
                           size="medium"
                           value={item.link}
@@ -135,7 +135,7 @@ const FooterForm = () => {
                 <Fragment>
                   <Grid item xs={12}>
                     <FlexBetween>
-                      <H4>Third Column Content</H4>
+                      <H4>محتوى العمود الثالث</H4>
 
                       <Button
                         color="info"
@@ -148,7 +148,7 @@ const FooterForm = () => {
                           });
                         }}
                       >
-                        Add Item
+                        إضافة عنصر
                       </Button>
                     </FlexBetween>
                   </Grid>
@@ -159,7 +159,7 @@ const FooterForm = () => {
                       color="info"
                       size="medium"
                       onBlur={handleBlur}
-                      label="Heading Name"
+                      label="اسم العنوان"
                       onChange={handleChange}
                       name="column_three_heading"
                       value={values.column_three_heading}
@@ -171,7 +171,7 @@ const FooterForm = () => {
                       <Grid item xs={5}>
                         <TextField
                           fullWidth
-                          label="Name"
+                          label="الاسم"
                           color="info"
                           size="medium"
                           value={item.name}
@@ -184,7 +184,7 @@ const FooterForm = () => {
                       <Grid item xs={5}>
                         <TextField
                           fullWidth
-                          label="Link"
+                          label="الرابط"
                           color="info"
                           size="medium"
                           value={item.link}
@@ -210,13 +210,13 @@ const FooterForm = () => {
             </Grid>
 
             <Grid item xs={12}>
-              <H4 mb={2}>Four Column Content</H4>
+              <H4 mb={2}>محتوى العمود الرابع</H4>
 
               <TextField
                 fullWidth
                 color="info"
                 size="medium"
-                label="Heading"
+                label="اسم العنوان"
                 onBlur={handleBlur}
                 onChange={handleChange}
                 name="column_four_heading"
@@ -234,7 +234,7 @@ const FooterForm = () => {
                 onBlur={handleBlur}
                 onChange={handleChange}
                 name="column_four_description"
-                label="Column Content"
+                label="محتوى العمود"
                 value={values.column_four_description}
               />
             </Grid>
@@ -248,7 +248,7 @@ const FooterForm = () => {
               mt: 4,
             }}
           >
-            Save Changes
+            حفظ التغييرات
           </Button>
         </form>
       )}

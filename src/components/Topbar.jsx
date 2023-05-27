@@ -102,22 +102,6 @@ const Topbar = ({ bgColor }) => {
     <TopbarWrapper bgColor={bgColor} expand={expand ? 1 : 0}>
       <StyledContainer>
         <FlexBetween width="100%">
-          <FlexBox alignItems="center" gap={1}>
-            <Chip
-              label="HOT"
-              size="small"
-              sx={{
-                color: "white",
-                fontWeight: 700,
-                backgroundColor: "primary.main",
-                "& .MuiChip-label": {
-                  pl: ".8rem",
-                  pr: ".8rem",
-                },
-              }}
-            />
-            <Span className="title">Free Express Shipping</Span>
-          </FlexBox>
 
           <IconButton
             disableRipple
@@ -133,7 +117,7 @@ const Topbar = ({ bgColor }) => {
             handler={
               <TouchRipple className="handler marginRight">
                 <Span className="menuTitle">
-                  {language === "en" ? "EN" : "DE"}
+                  {language === "en" ? "EN" : "AR"}
                 </Span>
                 <ExpandMore fontSize="inherit" />
               </TouchRipple>
@@ -189,8 +173,8 @@ const languageList = [
     value: "en",
   },
   {
-    title: "DE",
-    value: "de",
+    title: "AR",
+    value: "ar",
   },
 ];
 export default Topbar;

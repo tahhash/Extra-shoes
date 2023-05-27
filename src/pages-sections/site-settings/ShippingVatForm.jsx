@@ -22,7 +22,7 @@ const ShippingVatForm = () => {
         <form onSubmit={handleSubmit} encType="multipart/form-data">
           <Grid container spacing={3}>
             <Grid item xs={12}>
-              <H4>Shipping and Vat</H4>
+              <H4>الشحن والضريبة المضافة</H4>
             </Grid>
 
             <Grid item md={7} xs={12}>
@@ -33,7 +33,7 @@ const ShippingVatForm = () => {
                 type="number"
                 name="shipping"
                 onBlur={handleBlur}
-                label="Shipping Charge"
+                label="رسوم الشحن"
                 onChange={handleChange}
                 value={values.shipping}
                 error={!!touched.shipping && !!errors.shipping}
@@ -48,7 +48,7 @@ const ShippingVatForm = () => {
                 color="info"
                 size="medium"
                 type="number"
-                label="VAT (%)"
+                label="القيمة المضافة (%)"
                 value={values.vat}
                 onBlur={handleBlur}
                 onChange={handleChange}
@@ -66,7 +66,7 @@ const ShippingVatForm = () => {
               mt: 4,
             }}
           >
-            Save Changes
+            حفظ التغييرات
           </Button>
         </form>
       )}

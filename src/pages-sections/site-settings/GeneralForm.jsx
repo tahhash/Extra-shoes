@@ -37,7 +37,7 @@ const GeneralForm = () => {
             <Grid item xs={12}>
               <DropZone
                 onChange={(files) => console.log(files)}
-                title="Drag & Drop Site Logo"
+                title="اسحب وأسقط شعار الموقع هنا"
               />
             </Grid>
 
@@ -47,7 +47,7 @@ const GeneralForm = () => {
                 color="info"
                 size="medium"
                 name="site_name"
-                label="Site Name"
+                label="اسم الموقع"
                 onBlur={handleBlur}
                 onChange={handleChange}
                 value={values.site_name}
@@ -63,7 +63,7 @@ const GeneralForm = () => {
                 onBlur={handleBlur}
                 onChange={handleChange}
                 name="site_description"
-                label="Site Description"
+                label="وصف الموقع"
                 value={values.site_description}
                 error={!!touched.site_description && !!errors.site_description}
                 helperText={touched.site_description && errors.site_description}
@@ -80,7 +80,7 @@ const GeneralForm = () => {
                 onBlur={handleBlur}
                 name="site_banner_text"
                 onChange={handleChange}
-                label="Site Banner Text"
+                label="نص البانر الموقع"
                 value={values.site_banner_text}
                 error={!!touched.site_banner_text && !!errors.site_banner_text}
                 helperText={touched.site_banner_text && errors.site_banner_text}
@@ -90,7 +90,7 @@ const GeneralForm = () => {
             <Grid item xs={12}>
               <DropZone
                 onChange={(files) => console.log(files)}
-                title="Drag & Drop Site Banner Image"
+                title="اسحب وأسقط صورة بانر الموقع هنا"
               />
             </Grid>
           </Grid>
@@ -103,7 +103,7 @@ const GeneralForm = () => {
               mt: 4,
             }}
           >
-            Save Changes
+            حفظ التغييرات
           </Button>
         </form>
       )}

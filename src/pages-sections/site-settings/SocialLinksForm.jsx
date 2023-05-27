@@ -23,7 +23,7 @@ const SocialLinksForm = () => {
         <form onSubmit={handleSubmit}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
-              <H4>Social Links</H4>
+              <H4>روابط التواصل الاجتماعي</H4>
             </Grid>
 
             <Grid item md={6} xs={12}>
@@ -127,7 +127,7 @@ const SocialLinksForm = () => {
             </Grid>
 
             <Grid item xs={12}>
-              <H4>App Links</H4>
+              <H4>روابط التطبيق</H4>
             </Grid>
 
             <Grid item md={6} xs={12}>
@@ -187,7 +187,7 @@ const SocialLinksForm = () => {
               mt: 4,
             }}
           >
-            Save Changes
+            حفظ التغييرات
           </Button>
         </form>
       )}

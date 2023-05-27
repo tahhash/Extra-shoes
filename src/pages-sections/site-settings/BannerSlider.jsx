@@ -35,7 +35,7 @@ const BannerSlider = () => {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <DropZone
-            title="Drag and Drop slide image here"
+            title="اسحب وأسقط صورة الشريحة هنا"
             imageSize="upload landscape photo"
             onChange={(files) => console.log(files)}
           />
@@ -59,7 +59,7 @@ const BannerSlider = () => {
 
         <Grid item xs={12}>
           <Button type="submit" color="info" variant="contained">
-            Save Changes
+          حفظ التغييرات
           </Button>
         </Grid>
       </Grid>
