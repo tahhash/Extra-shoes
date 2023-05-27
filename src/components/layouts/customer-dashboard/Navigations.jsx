@@ -92,12 +92,6 @@ const linkList = [
         icon: Place,
         count: 16,
       },
-      {
-        href: "/payment-methods",
-        title: "طرق الدفع",
-        icon: CreditCard,
-        count: 4,
-      },
     ],
   },
 ];
