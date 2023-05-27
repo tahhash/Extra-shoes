@@ -21,7 +21,7 @@ const WrapperBox = styled(Box)(({ theme }) => ({
 const FrequentlyBought = ({ productsData }) => {
   return (
     <WrapperBox mb={7.5}>
-      <H3 mb={3}>Frequently Bought Together</H3>
+      <H3 mb={3}>يتم شراءها معًا بشكل متكرر</H3>
 
       <FlexBox className="card-holder" flexWrap="wrap" m={-1}>
         {productsData.map((item, ind) => (
@@ -76,16 +76,16 @@ const FrequentlyBought = ({ productsData }) => {
         >
           <H3 color="primary.main">{currency(2500)}</H3>
           <Span mb={2} fontWeight="600" color="grey.600">
-            Save {currency(500)}
+          حفظ {currency(500)}
           </Span>
 
           <FlexBox gap={1.5}>
             <Button variant="contained" color="primary">
-              Add to Cart
+            أضف إلى السلة
             </Button>
 
             <Button variant="outlined" color="primary">
-              Add to List
+            أضف إلى القائمة
             </Button>
           </FlexBox>
         </FlexRowCenter>
