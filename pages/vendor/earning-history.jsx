@@ -17,32 +17,32 @@ import { currency } from "lib";
 const tableHeading = [
   {
     id: "no",
-    label: "No",
+    label: "رقم",
     align: "left",
   },
   {
     id: "orderNo",
-    label: "Order No",
+    label: "رقم الطلب",
     align: "left",
   },
   {
     id: "adminCommission",
-    label: "Admin Commission",
+    label: "عمولة المشرف",
     align: "center",
   },
   {
     id: "earning",
-    label: "Your Earning",
+    label: "أرباحك",
     align: "center",
   },
   {
     id: "date",
-    label: "Date",
+    label: "التاريخ",
     align: "left",
   },
   {
     id: "action",
-    label: "Action",
+    label: "الإجراءات",
     align: "center",
   },
 ];
@@ -70,7 +70,7 @@ export default function EarningHistory({ earnings }) {
   });
   return (
     <Box py={4}>
-      <H3 mb={2}>Earning History</H3>
+      <H3 mb={2}>سجل الأرباح</H3>
 
       <Card>
         <Scrollbar>
