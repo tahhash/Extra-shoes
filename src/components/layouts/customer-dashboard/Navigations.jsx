@@ -72,46 +72,29 @@ const Navigations = () => {
 };
 const linkList = [
   {
-    title: "DASHBOARD",
+    title: "لوحة التحكم",
     list: [
       {
         href: "/orders",
-        title: "Orders",
+        title: "الطلبات",
         icon: ShoppingBagOutlined,
         count: 5,
       },
       {
-        href: "/wish-list",
-        title: "Wishlist",
-        icon: FavoriteBorder,
-        count: 19,
-      },
-      {
-        href: "/support-tickets",
-        title: "Support Tickets",
-        icon: CustomerService,
-        count: 1,
-      },
-    ],
-  },
-  {
-    title: "ACCOUNT SETTINGS",
-    list: [
-      {
         href: "/profile",
-        title: "Profile Info",
+        title: "معلومات الملف الشخصي",
         icon: Person,
         count: 3,
       },
       {
         href: "/address",
-        title: "Addresses",
+        title: "العناوين",
         icon: Place,
         count: 16,
       },
       {
         href: "/payment-methods",
-        title: "Payment Methods",
+        title: "طرق الدفع",
         icon: CreditCard,
         count: 4,
       },
