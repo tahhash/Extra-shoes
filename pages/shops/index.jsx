@@ -15,7 +15,7 @@ const ShopList = ({ shopList }) => {
           mb: 6,
         }}
       >
-        <H2 mb={3}>All Shops</H2>
+        <H2 mb={3}>جميع المتاجر</H2>
 
         {/* ALL SHOP LIST AREA */}
         <Grid container spacing={3}>
@@ -36,7 +36,7 @@ const ShopList = ({ shopList }) => {
 
         {/* PAGINTAION AREA */}
         <FlexBetween flexWrap="wrap" mt={4}>
-          <Span color="grey.600">Showing 1-9 of 300 Shops</Span>
+          <Span color="grey.600">عرض 1-9 من 300 متجر</Span>
           <Pagination
             count={shopList.length}
             variant="outlined"

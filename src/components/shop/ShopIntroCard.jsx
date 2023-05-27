@@ -119,7 +119,7 @@ const ShopIntroCard = (props) => {
                   my: 1.5,
                 }}
               >
-                Contact Vendor
+                اتصل بالبائع
               </Button>
             </a>
           </FlexBetween>
