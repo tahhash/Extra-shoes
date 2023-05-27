@@ -77,7 +77,7 @@ const SalePage1 = () => {
   }, [page]);
   return (
     <SaleLayout>
-      <SEO title="Sale page v1" />
+      <SEO title="Exxtra" />
 
       <Container
         sx={{
