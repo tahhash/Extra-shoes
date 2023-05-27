@@ -1,7 +1,7 @@
 export default [
   {
     id: "847b3a0e-a0db-4179-ba51-9ee601434db8",
-    slug: "lord-2019",
+    slug: "nike-red",
     shop: {
       id: "acfa0595-3e11-4afc-a3e4-c59ddafe5ea5",
       slug: "scarlett-beauty",
@@ -103,7 +103,7 @@ export default [
   },
   {
     id: "267f027d-c356-4ed0-a247-dc804e79f098",
-    slug: "resla-2015",
+    slug: "north-star-cream",
     shop: {
       id: "acfa0595-3e11-4afc-a3e4-c59ddafe5ea5",
       slug: "scarlett-beauty",
@@ -868,7 +868,7 @@ export default [
   },
   {
     id: "6bc04c09-1792-4f6d-90b0-e9a47c2f99b1",
-    slug: "budi-2019",
+    slug: "puma-black",
     shop: {
       id: "acfa0595-3e11-4afc-a3e4-c59ddafe5ea5",
       slug: "scarlett-beauty",
@@ -970,7 +970,7 @@ export default [
   },
   {
     id: "25fff176-7b4b-4f98-bc10-e0994f22ac44",
-    slug: "hundai-2020",
+    slug: "nike-fluffy-yellow",
     shop: {
       id: "6976c27f-e038-4df2-b8a4-1559a73f4b82",
       slug: "scarlett-beauty",
@@ -1072,7 +1072,7 @@ export default [
   },
   {
     id: "95e95f4c-956e-4fd4-8995-31cf9371745d",
-    slug: "lord-2011",
+    slug: "nike-red",
     shop: {
       id: "acfa0595-3e11-4afc-a3e4-c59ddafe5ea5",
       slug: "scarlett-beauty",
@@ -4198,7 +4198,7 @@ export default [
   },
   {
     id: "394972ca-c431-46a9-be33-c3688fa001de",
-    slug: "lokia-android-one",
+    slug: "north-star-cream",
     shop: {
       id: "6976c27f-e038-4df2-b8a4-1559a73f4b82",
       slug: "scarlett-beauty",
@@ -4814,7 +4814,7 @@ export default [
   },
   {
     id: "c367c409-edd8-4000-a1bb-bd89a55500ee",
-    slug: "say-ban-green",
+    slug: "puma-black",
     shop: {
       id: "acfa0595-3e11-4afc-a3e4-c59ddafe5ea5",
       slug: "scarlett-beauty",
@@ -4865,7 +4865,7 @@ export default [
   },
   {
     id: "a42a9fe3-1b70-4795-a1ca-2afc3f921673",
-    slug: "police-gray-eyeglasses",
+    slug: "puma-black",
     shop: {
       id: "acfa0595-3e11-4afc-a3e4-c59ddafe5ea5",
       slug: "scarlett-beauty",
@@ -4967,7 +4967,7 @@ export default [
   },
   {
     id: "d2cca96f-a9b2-48b7-8c9a-87a881c9aea1",
-    slug: "say-ban-black",
+    slug: "nike-fluffy-yellow",
     shop: {
       id: "6976c27f-e038-4df2-b8a4-1559a73f4b82",
       slug: "scarlett-beauty",
