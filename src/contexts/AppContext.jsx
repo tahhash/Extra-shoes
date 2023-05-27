@@ -12,7 +12,7 @@ const INITIAL_CART = [
     name: "Flow White",
     id: "6e8f151b-277b-4465-97b6-547f6a72e5c9",
     imgUrl:
-      "/assets/images/products/Fashion/Shoes/11.Flowwhite.png",
+      "/assets/images/products/Fashion/Shoes/1.NikeRed.png",
   },
   {
     qty: 1,
@@ -21,7 +21,7 @@ const INITIAL_CART = [
     name: "Nike Air White",
     id: "76d14d65-21d0-4b41-8ee1-eef4c2232793",
     imgUrl:
-      "/assets/images/products/Fashion/Shoes/12.NikeAirWhite.png",
+      "/assets/images/products/Fashion/Shoes/2.NorthStarCream.png",
   },
   {
     qty: 1,
@@ -29,7 +29,7 @@ const INITIAL_CART = [
     slug: "nike-mint",
     name: "Nike Mint",
     id: "0fffb188-98d8-47f7-8189-254f06cad488",
-    imgUrl: "/assets/images/products/Fashion/Shoes/15.NikeMint.png",
+    imgUrl: "/assets/images/products/Fashion/Shoes/3.PumaBlack.png",
   },
 ];
 const INITIAL_STATE = {
