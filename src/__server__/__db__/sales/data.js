@@ -39,7 +39,7 @@ export const categoriesTwo = [
     parent: [],
     description: null,
     for: {
-      demo: "sale-page-1",
+      demo: "sale-page-2",
       type: "categories",
     },
   },
@@ -52,7 +52,7 @@ export const categoriesTwo = [
     parent: [],
     description: null,
     for: {
-      demo: "sale-page-1",
+      demo: "sale-page-2",
       type: "categories",
     },
   },
