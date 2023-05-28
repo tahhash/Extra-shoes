@@ -53,7 +53,7 @@ export default function EditProduct() {
   const handleFormSubmit = () => {};
   return (
     <Box py={4}>
-      <H3 mb={2}>Edit Product</H3>
+      <H3 mb={2}>تحرير المنتج</H3>
 
       <ProductForm
         initialValues={product}

@@ -14,34 +14,34 @@ import api from "utils/__api__/dashboard";
 const tableHeading = [
   {
     id: "name",
-    label: "Name",
+    label: "الاسم",
     align: "left",
-  },
-  {
+},
+{
     id: "category",
-    label: "Category",
+    label: "الفئة",
     align: "left",
-  },
-  {
+},
+{
     id: "brand",
-    label: "Brand",
+    label: "العلامة التجارية",
     align: "left",
-  },
-  {
+},
+{
     id: "price",
-    label: "Price",
+    label: "السعر",
     align: "left",
-  },
-  {
+},
+{
     id: "published",
-    label: "Published",
+    label: "تم النشر",
     align: "left",
-  },
-  {
+},
+{
     id: "action",
-    label: "Action",
+    label: "إجراء",
     align: "center",
-  },
+},
 ];
 
 // =============================================================================
@@ -79,12 +79,12 @@ export default function ProductList(props) {
   });
   return (
     <Box py={4}>
-      <H3 mb={2}>Product List</H3>
+      <H3 mb={2}>قائمة المنتجات</H3>
 
       <SearchArea
         handleSearch={() => {}}
-        buttonText="Add Product"
-        searchPlaceholder="Search Product..."
+        buttonText="أضف منتج"
+        searchPlaceholder="بحث عن منتج ..."
         handleBtnClick={() => Router.push("/admin/products/create")}
       />
 

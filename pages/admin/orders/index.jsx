@@ -13,39 +13,39 @@ import api from "utils/__api__/dashboard";
 const tableHeading = [
   {
     id: "id",
-    label: "Order ID",
+    label: "معرّف الطلب",
     align: "left",
-  },
-  {
+},
+{
     id: "qty",
-    label: "Qty",
+    label: "الكمية",
     align: "left",
-  },
-  {
+},
+{
     id: "purchaseDate",
-    label: "Purchase Date",
+    label: "تاريخ الشراء",
     align: "left",
-  },
-  {
+},
+{
     id: "billingAddress",
-    label: "Billing Address",
+    label: "عنوان الفوترة",
     align: "left",
-  },
-  {
+},
+{
     id: "amount",
-    label: "Amount",
+    label: "المبلغ",
     align: "left",
-  },
-  {
+},
+{
     id: "status",
-    label: "Status",
+    label: "الحالة",
     align: "left",
-  },
-  {
+},
+{
     id: "action",
-    label: "Action",
+    label: "إجراء",
     align: "center",
-  },
+},
 ];
 
 // =============================================================================
@@ -81,13 +81,13 @@ export default function OrderList({ orders }) {
   });
   return (
     <Box py={4}>
-      <H3 mb={2}>Orders</H3>
+      <H3 mb={2}>الطلبات</H3>
 
       <SearchArea
         handleSearch={() => {}}
-        buttonText="Create Order"
+        buttonText="إنشاء طلب"
         handleBtnClick={() => {}}
-        searchPlaceholder="Search Order..."
+        searchPlaceholder="البحث عن الطلب..."
       />
 
       <Card>
