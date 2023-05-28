@@ -52,7 +52,7 @@ const PaymentForm = () => {
             LinkComponent={Link}
             variant="contained"
             color="primary"
-            href="/orders"
+            href="/order-confirmation"
             type="submit"
             fullWidth
           >

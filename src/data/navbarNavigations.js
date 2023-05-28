@@ -30,18 +30,6 @@ const megaMenus = [
           title: "إضافة عنوان",
           url: "/address/d27d0e28-c35e-4085-af1e-f9f1b1bd9c34",
         },
-        {
-          title: "جميع التذاكر",
-          url: "/support-tickets",
-        },
-        {
-          title: "تفاصيل التذكرة",
-          url: "/support-tickets/when-will-my-product-arrive",
-        },
-        {
-          title: "المفضلة",
-          url: "/wish-list",
-        },
       ],
     },
     {
@@ -105,7 +93,7 @@ const megaMenus = [
         },
         {
           title: "منتج واحد",
-          url: "/product/lord-2019",
+          url: "/product/nike-red",
         },
         {
           title: "السلة",
