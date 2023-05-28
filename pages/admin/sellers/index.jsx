@@ -14,32 +14,32 @@ import api from "utils/__api__/dashboard";
 const tableHeading = [
   {
     id: "name",
-    label: "Seller Name",
+    label: "اسم البائع",
     align: "left",
   },
   {
     id: "shopName",
-    label: "Shop Name",
+    label: "اسم المحل",
     align: "left",
   },
   {
     id: "package",
-    label: "Current Package",
+    label: "طرد الحالي",
     align: "left",
   },
   {
     id: "balance",
-    label: "Current Balance",
+    label: "الرصيد الحالي",
     align: "left",
   },
   {
     id: "published",
-    label: "Shop Published",
+    label: "المحل منشور",
     align: "left",
   },
   {
     id: "action",
-    label: "Action",
+    label: "الإجراء",
     align: "center",
   },
 ];
@@ -66,13 +66,13 @@ export default function SellerList({ sellers }) {
   });
   return (
     <Box py={4}>
-      <H3 mb={2}>Sellers</H3>
+      <H3 mb={2}>تجار</H3>
 
       <SearchArea
         handleSearch={() => {}}
-        buttonText="Add New Seller"
+        buttonText="إضافة بائع جديد"
         handleBtnClick={() => {}}
-        searchPlaceholder="Search Seller..."
+        searchPlaceholder="بحث البائع ..."
       />
 
       <Card>

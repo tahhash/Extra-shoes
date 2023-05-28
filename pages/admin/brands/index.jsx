@@ -15,27 +15,27 @@ import api from "utils/__api__/dashboard";
 const tableHeading = [
   {
     id: "id",
-    label: "ID",
+    label: "الرقم التعريفي",
     align: "center",
   },
   {
     id: "name",
-    label: "Name",
+    label: "الاسم",
     align: "center",
   },
   {
     id: "logo",
-    label: "Logo",
+    label: "الشعار",
     align: "center",
   },
   {
     id: "featured",
-    label: "Featured",
+    label: "مميز",
     align: "center",
   },
   {
     id: "action",
-    label: "Action",
+    label: "الإجراء",
     align: "center",
   },
 ];
@@ -71,12 +71,12 @@ export default function BrandList({ brands }) {
   });
   return (
     <Box py={4}>
-      <H3 mb={2}>Product Brands</H3>
+      <H3 mb={2}>علامة تجارية للمنتجات</H3>
 
       <SearchArea
         handleSearch={() => {}}
-        buttonText="Add Brand"
-        searchPlaceholder="Search Brand..."
+        buttonText="أضف العلامة التجارية"
+        searchPlaceholder="بحث عن علامة تجارية ..."
         handleBtnClick={() => Router.push("/admin/brands/create")}
       />
 

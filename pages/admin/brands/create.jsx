@@ -24,7 +24,7 @@ export default function CreateBrand() {
   const handleFormSubmit = () => {};
   return (
     <Box py={4}>
-      <H3 mb={2}>Create New Brand</H3>
+      <H3 mb={2}>إنشاء علامة تجارية جديدة</H3>
 
       <BrandForm
         initialValues={INITIAL_VALUES}
