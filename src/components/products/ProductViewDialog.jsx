@@ -112,7 +112,7 @@ const ProductViewDialog = (props) => {
               <H2>{product.title}</H2>
 
               <Paragraph py={1} color="grey.500" fontWeight={600} fontSize={13}>
-                CATEGORY: Cosmetic
+              الفئة: الموضة
               </Paragraph>
 
               <H1 color="primary.main">{currency(product.price)}</H1>
@@ -149,7 +149,7 @@ const ProductViewDialog = (props) => {
                     height: 45,
                   }}
                 >
-                  Add to Cart
+                  أضف إلى السلة
                 </Button>
               ) : (
                 <FlexBox alignItems="center">
