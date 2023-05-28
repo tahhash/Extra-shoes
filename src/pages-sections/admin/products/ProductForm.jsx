@@ -49,14 +49,14 @@ const ProductForm = (props) => {
         }) => (
           <form onSubmit={handleSubmit}>
             <Grid container spacing={3}>
-              <Grid item sm={6} xs={12}>
+            <Grid item sm={6} xs={12}>
                 <TextField
                   fullWidth
                   name="name"
-                  label="Name"
+                  label="الاسم"
                   color="info"
                   size="medium"
-                  placeholder="Name"
+                  placeholder="الاسم"
                   value={values.name}
                   onBlur={handleBlur}
                   onChange={handleChange}
@@ -72,18 +72,18 @@ const ProductForm = (props) => {
                   size="medium"
                   name="category"
                   onBlur={handleBlur}
-                  placeholder="Category"
+                  placeholder="التصنيف"
                   onChange={handleChange}
                   value={values.category}
-                  label="Select Category"
+                  label="اختر التصنيف"
                   SelectProps={{
                     multiple: true,
                   }}
                   error={!!touched.category && !!errors.category}
                   helperText={touched.category && errors.category}
                 >
-                  <MenuItem value="electronics">Electronics</MenuItem>
-                  <MenuItem value="fashion">Fashion</MenuItem>
+                  <MenuItem value="electronics">الإلكترونيات</MenuItem>
+                  <MenuItem value="fashion">الأزياء</MenuItem>
                 </TextField>
               </Grid>
 
@@ -110,10 +110,10 @@ const ProductForm = (props) => {
                   color="info"
                   size="medium"
                   name="description"
-                  label="Description"
+                  label="الوصف"
                   onBlur={handleBlur}
                   onChange={handleChange}
-                  placeholder="Description"
+                  placeholder="الوصف"
                   value={values.description}
                   error={!!touched.description && !!errors.description}
                   helperText={touched.description && errors.description}
@@ -125,8 +125,8 @@ const ProductForm = (props) => {
                   name="stock"
                   color="info"
                   size="medium"
-                  label="Stock"
-                  placeholder="Stock"
+                  label="المخزون"
+                  placeholder="المخزون"
                   onBlur={handleBlur}
                   value={values.stock}
                   onChange={handleChange}
@@ -138,10 +138,10 @@ const ProductForm = (props) => {
                 <TextField
                   fullWidth
                   name="tags"
-                  label="Tags"
+                  label="العلامات"
                   color="info"
                   size="medium"
-                  placeholder="Tags"
+                  placeholder="العلامات"
                   onBlur={handleBlur}
                   value={values.tags}
                   onChange={handleChange}
@@ -158,9 +158,9 @@ const ProductForm = (props) => {
                   type="number"
                   onBlur={handleBlur}
                   value={values.price}
-                  label="Regular Price"
+                  label="السعر العادي"
                   onChange={handleChange}
-                  placeholder="Regular Price"
+                  placeholder="السعر العادي"
                   error={!!touched.price && !!errors.price}
                   helperText={touched.price && errors.price}
                 />
@@ -172,10 +172,10 @@ const ProductForm = (props) => {
                   size="medium"
                   type="number"
                   name="sale_price"
-                  label="Sale Price"
+                  label="سعر البيع"
                   onBlur={handleBlur}
                   onChange={handleChange}
-                  placeholder="Sale Price"
+                  placeholder="سعر البيع"
                   value={values.sale_price}
                   error={!!touched.sale_price && !!errors.sale_price}
                   helperText={touched.sale_price && errors.sale_price}
@@ -184,7 +184,7 @@ const ProductForm = (props) => {
 
               <Grid item sm={6} xs={12}>
                 <Button variant="contained" color="info" type="submit">
-                  Save product
+                حفظ المنتج
                 </Button>
               </Grid>
             </Grid>

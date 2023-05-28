@@ -19,32 +19,32 @@ import { currency } from "lib";
 const tableHeading = [
   {
     id: "no",
-    label: "No",
+    label: "رقم",
     align: "left",
   },
   {
     id: "sellerInfo",
-    label: "Seller Info",
+    label: "معلومات البائع",
     align: "left",
   },
   {
     id: "amount",
-    label: "Amount",
+    label: "المبلغ",
     align: "left",
   },
   {
     id: "date",
-    label: "Date",
+    label: "التاريخ",
     align: "left",
   },
   {
     id: "payment",
-    label: "Payment Method",
+    label: "طريقة الدفع",
     align: "center",
   },
   {
     id: "action",
-    label: "Action",
+    label: "الإجراءات",
     align: "center",
   },
 ];
@@ -72,7 +72,7 @@ export default function Payouts({ payouts }) {
   });
   return (
     <Box py={4}>
-      <H3 mb={2}>Payouts</H3>
+      <H3 mb={2}>المدفوعات</H3>
 
       <Card>
         <Scrollbar>

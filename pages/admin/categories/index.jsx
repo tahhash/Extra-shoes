@@ -20,27 +20,27 @@ const tableHeading = [
   },
   {
     id: "name",
-    label: "Name",
+    label: "اسم",
     align: "left",
   },
   {
     id: "image",
-    label: "Image",
+    label: "صورة",
     align: "left",
   },
   {
     id: "level",
-    label: "Level",
+    label: "مستوى",
     align: "left",
   },
   {
     id: "featured",
-    label: "Featured",
+    label: "مميز",
     align: "left",
   },
   {
     id: "action",
-    label: "Action",
+    label: "إجراءات",
     align: "center",
   },
 ];
@@ -78,11 +78,11 @@ export default function CategoryList(props) {
   });
   return (
     <Box py={4}>
-      <H3 mb={2}>Product Categories</H3>
+      <H3 mb={2}>تصنيفات المنتجات</H3>
 
       <SearchArea
         handleSearch={() => {}}
-        buttonText="Add Category"
+        buttonText="إضافة تصنيف"
         searchPlaceholder="Search Category..."
         handleBtnClick={() => Router.push("/admin/categories/create")}
       />

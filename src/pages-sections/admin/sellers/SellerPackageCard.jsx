@@ -37,7 +37,7 @@ const SellerPackageCard = ({ listItem }) => {
       />
 
       <H3 mt={3} fontWeight={600}>
-        {packageName} Package
+        {packageName} طرد
       </H3>
 
       <PackageHeading fontSize={60}>{currency(price, 0)}</PackageHeading>
@@ -53,11 +53,11 @@ const SellerPackageCard = ({ listItem }) => {
 
       <FlexBox alignItems="center" gap={2} width={200}>
         <Button fullWidth color="secondary" variant="outlined">
-          Edit
+          تعديل
         </Button>
 
         <Button fullWidth color="error" variant="outlined">
-          Delete
+          حذف
         </Button>
       </FlexBox>
     </Wrapper>

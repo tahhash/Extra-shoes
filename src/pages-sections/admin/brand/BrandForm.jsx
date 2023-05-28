@@ -60,10 +60,10 @@ const BrandForm = (props) => {
                 <TextField
                   fullWidth
                   name="name"
-                  label="Name"
+                  label="الاسم"
                   color="info"
                   size="medium"
-                  placeholder="Name"
+                  placeholder="الاسم"
                   value={values.name}
                   onBlur={handleBlur}
                   onChange={handleChange}
@@ -74,7 +74,7 @@ const BrandForm = (props) => {
 
               <Grid item xs={12}>
                 <DropZone
-                  title="Drop & drag category image"
+                  title="اسحب وأسقط صورة الفئة"
                   onChange={(files) => handleChangeDropZone(files)}
                 />
 
@@ -92,7 +92,7 @@ const BrandForm = (props) => {
 
               <Grid item sm={6} xs={12}>
                 <FormControlLabel
-                  label="Featured Category"
+                  label="فئة مميزة"
                   control={
                     <Checkbox
                       color="info"
@@ -107,7 +107,7 @@ const BrandForm = (props) => {
 
               <Grid item xs={12}>
                 <Button variant="contained" color="info" type="submit">
-                  Save category
+                  حفظ الفئة
                 </Button>
               </Grid>
             </Grid>

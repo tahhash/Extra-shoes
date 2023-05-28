@@ -61,10 +61,10 @@ const CategoryForm = (props) => {
                 <TextField
                   fullWidth
                   name="name"
-                  label="Name"
+                  label="اسم"
                   color="info"
                   size="medium"
-                  placeholder="Name"
+                  placeholder="اسم"
                   value={values.name}
                   onBlur={handleBlur}
                   onChange={handleChange}
@@ -83,20 +83,20 @@ const CategoryForm = (props) => {
                   onBlur={handleBlur}
                   value={values.parent}
                   onChange={handleChange}
-                  placeholder="Parent Category"
-                  label="Select Parent Category"
+                  placeholder="فئة الأصل"
+                  label="اختر فئة الأصل"
                   SelectProps={{
                     multiple: true,
                   }}
                 >
-                  <MenuItem value="electronics">Electronics</MenuItem>
-                  <MenuItem value="fashion">Fashion</MenuItem>
+                  <MenuItem value="electronics">إلكترونيات</MenuItem>
+                  <MenuItem value="fashion">أزياء</MenuItem>
                 </TextField>
               </Grid>
 
               <Grid item xs={12}>
                 <DropZone
-                  title="Drop & drag category image"
+                  title="اسحب وأفلت صورة الفئة"
                   onChange={(files) => handleChangeDropZone(files)}
                 />
 
@@ -114,7 +114,7 @@ const CategoryForm = (props) => {
 
               <Grid item sm={6} xs={12}>
                 <FormControlLabel
-                  label="Featured Category"
+                  label="فئة مميزة"
                   control={
                     <Checkbox
                       color="info"
@@ -146,7 +146,7 @@ const CategoryForm = (props) => {
 
               <Grid item xs={12}>
                 <Button variant="contained" color="info" type="submit">
-                  Save category
+                  حفظ الفئة
                 </Button>
               </Grid>
             </Grid>

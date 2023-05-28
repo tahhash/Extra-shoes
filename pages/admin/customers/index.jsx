@@ -14,32 +14,32 @@ import api from "utils/__api__/dashboard";
 const tableHeading = [
   {
     id: "name",
-    label: "Name",
+    label: "الاسم",
     align: "left",
   },
   {
     id: "phone",
-    label: "Phone",
+    label: "الهاتف",
     align: "left",
   },
   {
     id: "email",
-    label: "Email",
+    label: "البريد الإلكتروني",
     align: "left",
   },
   {
     id: "balance",
-    label: "Wallet Balance",
+    label: "رصيد المحفظة",
     align: "left",
   },
   {
     id: "orders",
-    label: "No Of Orders",
+    label: "عدد الطلبات",
     align: "left",
   },
   {
     id: "action",
-    label: "Action",
+    label: "الإجراءات",
     align: "center",
   },
 ];
@@ -66,11 +66,11 @@ export default function CustomerList({ customers }) {
   });
   return (
     <Box py={4}>
-      <H3 mb={2}>Customers</H3>
+      <H3 mb={2}>زبون</H3>
 
       <SearchArea
         handleSearch={() => {}}
-        buttonText="Add Customer"
+        buttonText="إضافة زبون"
         handleBtnClick={() => {}}
         searchPlaceholder="Search Customer..."
       />

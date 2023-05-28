@@ -27,12 +27,11 @@ const OrderDetails = ({ order }) => {
         >
           <FlexBox alignItems="center" gap={4}>
             <Paragraph>
-              <Span color="grey.600">Order ID:</Span> {order.id}
+              <Span color="grey.600">رقم الطلب:</Span> {order.id}
             </Paragraph>
-
             <Paragraph>
-              <Span color="grey.600">Placed on:</Span>{" "}
-              {format(new Date(order.createdAt), "dd MMM, yyyy")}
+              <Span color="grey.600">تم الطلب في:</Span>{" "}
+              {format(new Date(order.createdAt), "dd MMM، yyyy")}
             </Paragraph>
           </FlexBox>
 
@@ -49,8 +48,8 @@ const OrderDetails = ({ order }) => {
               color="info"
               size="medium"
               variant="outlined"
-              label="Add Product"
-              placeholder="Type product name"
+              label="إضافة منتج"
+              placeholder="اكتب اسم المنتج"
             />
 
             <TextField
@@ -59,7 +58,7 @@ const OrderDetails = ({ order }) => {
               color="info"
               size="medium"
               defaultValue={order.status}
-              label="Order Status"
+              label="حالة الطلب"
               inputProps={{
                 IconComponent: () => (
                   <KeyboardArrowDown
@@ -71,10 +70,10 @@ const OrderDetails = ({ order }) => {
                 ),
               }}
             >
-              <MenuItem value="Processing">Processing</MenuItem>
-              <MenuItem value="Pending">Pending</MenuItem>
-              <MenuItem value="Delivered">Delivered</MenuItem>
-              <MenuItem value="Cancelled">Cancelled</MenuItem>
+              <MenuItem value="Processing">قيد المعالجة</MenuItem>
+              <MenuItem value="Pending">قيد الانتظار</MenuItem>
+              <MenuItem value="Delivered">تم التوصيل</MenuItem>
+              <MenuItem value="Cancelled">تم الإلغاء</MenuItem>
             </TextField>
           </FlexBox>
 
@@ -121,9 +120,7 @@ const OrderDetails = ({ order }) => {
               </FlexBox>
 
               <FlexBetween flexShrink={0}>
-                <Paragraph color="grey.600">
-                  Product properties: Black, L
-                </Paragraph>
+                <Paragraph color="grey.600">خصائص المنتج:</Paragraph>
 
                 <IconButton>
                   <Delete
@@ -152,21 +149,20 @@ const OrderDetails = ({ order }) => {
             fullWidth
             color="info"
             variant="outlined"
-            label="Shipping Address"
+            label="عنوان الشحن"
             defaultValue={order.shippingAddress}
             sx={{
               mb: 4,
             }}
           />
-
           <TextField
             rows={5}
             multiline
             fullWidth
             color="info"
             variant="outlined"
-            label="Customer’s Note"
-            defaultValue="Please deliver ASAP."
+            label="ملاحظة العميل"
+            defaultValue="يرجى التسليم بأسرع وقت ممكن."
           />
         </Card>
       </Grid>
@@ -179,16 +175,16 @@ const OrderDetails = ({ order }) => {
           }}
         >
           <H5 mt={0} mb={2}>
-            Total Summary
+            ملخص الإجمالي
           </H5>
 
           <FlexBetween mb={1.5}>
-            <Paragraph color="grey.600">Subtotal:</Paragraph>
+            <Paragraph color="grey.600">الإجمالي الفرعي:</Paragraph>
             <H6>{currency(order.totalPrice)}</H6>
           </FlexBetween>
 
           <FlexBetween mb={1.5}>
-            <Paragraph color="grey.600">Shipping fee:</Paragraph>
+            <Paragraph color="grey.600">رسوم الشحن:</Paragraph>
 
             <FlexBox alignItems="center" gap={1} maxWidth={100}>
               <Paragraph>$</Paragraph>
@@ -202,7 +198,7 @@ const OrderDetails = ({ order }) => {
           </FlexBetween>
 
           <FlexBetween mb={1.5}>
-            <Paragraph color="grey.600">Discount(%):</Paragraph>
+            <Paragraph color="grey.600">الخصم (%):</Paragraph>
 
             <FlexBox alignItems="center" gap={1} maxWidth={100}>
               <Paragraph>$</Paragraph>
@@ -222,17 +218,17 @@ const OrderDetails = ({ order }) => {
           />
 
           <FlexBetween mb={2}>
-            <H6>Total</H6>
+            <H6>الإجمالي</H6>
             <H6>{currency(order.totalPrice)}</H6>
           </FlexBetween>
 
-          <Paragraph>Paid by Credit/Debit Card</Paragraph>
+          <Paragraph>الدفع عند التسليم</Paragraph>
         </Card>
       </Grid>
 
       <Grid item xs={12}>
         <Button variant="contained" color="info">
-          Save Changes
+        حفظ التغييرات
         </Button>
       </Grid>
     </Grid>

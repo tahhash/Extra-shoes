@@ -43,7 +43,7 @@ export default function EditCategory() {
   const handleFormSubmit = () => {};
   return (
     <Box py={4}>
-      <H3 mb={2}>Edit Category</H3>
+      <H3 mb={2}>تعديل التصنيف</H3>
 
       <CategoryForm
         initialValues={category}
