@@ -2864,9 +2864,7 @@ export default [
     unit: null,
   },
 
-
-//                //
-
+  //                //
 
   {
     id: "96127a55-8c13-4a6c-b176-3d0ce4af5235",
@@ -5018,7 +5016,7 @@ export default [
   },
   {
     id: "059ead4a-2ce7-4af1-a7e8-5314fd2dd42a",
-    slug: "say-ban-ocean",
+    slug: "Nike-red",
     shop: {
       id: "9b2e19f3-f3e0-46a3-9529-2aaa504a35b1",
       slug: "anytime-buys",
@@ -5050,16 +5048,16 @@ export default [
         instagram: null,
       },
     },
-    title: "Say Ban Ocean",
+    title: "Nike Red",
     brand: null,
     price: 143,
     size: null,
     colors: [],
     discount: 0,
-    thumbnail: "/assets/images/products/Fashion/Accessories/10.RayBanOcean.png",
+    thumbnail: "/assets/images/products/Fashion/Shoes/1.NikeRed.png",
     images: [
-      "/assets/images/products/Fashion/Accessories/10.RayBanOcean.png",
-      "/assets/images/products/Fashion/Accessories/10.RayBanOcean.png",
+      "/assets/images/products/Fashion/Shoes/1.NikeRed.png",
+      "/assets/images/products/Fashion/Shoes/1.NikeRed.png",
     ],
     categories: ["fashion"],
     status: null,
@@ -5069,7 +5067,7 @@ export default [
   },
   {
     id: "a6288d39-f2fd-48d8-a8ac-6f11acd8569a",
-    slug: "sun-glasses-collection",
+    slug: "North-star-cream",
     shop: {
       id: "9eecf921-25ca-4d1b-a1c4-f232371a176c",
       slug: "word-wide-wishes",
@@ -5101,17 +5099,16 @@ export default [
         instagram: null,
       },
     },
-    title: "Sun glasses Collection",
+    title: "North Star Cream",
     brand: null,
     price: 70,
     size: null,
     colors: [],
     discount: 0,
-    thumbnail:
-      "/assets/images/products/Fashion/Accessories/11.SunglassesCollection.png",
+    thumbnail: "/assets/images/products/Fashion/Shoes/2.NorthStarCream.png",
     images: [
-      "/assets/images/products/Fashion/Accessories/11.SunglassesCollection.png",
-      "/assets/images/products/Fashion/Accessories/11.SunglassesCollection.png",
+      "/assets/images/products/Fashion/Shoes/2.NorthStarCream.png",
+      "/assets/images/products/Fashion/Shoes/2.NorthStarCream.png",
     ],
     categories: ["fashion"],
     status: null,
@@ -5121,7 +5118,7 @@ export default [
   },
   {
     id: "c0267e2f-91ca-44d2-8b00-8af9194eee48",
-    slug: "ziaomi-mi-band2",
+    slug: "Nike-fluffy-yellow",
     shop: {
       id: "9b2e19f3-f3e0-46a3-9529-2aaa504a35b1",
       slug: "anytime-buys",
@@ -5153,17 +5150,16 @@ export default [
         instagram: null,
       },
     },
-    title: "Ziaomi mi band2",
+    title: "Nike Fluffy Yellow",
     brand: null,
     price: 171,
     size: null,
     colors: [],
     discount: 0,
-    thumbnail:
-      "/assets/images/products/Fashion/Accessories/12.Xiaomimiband2.png",
+    thumbnail: "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
     images: [
-      "/assets/images/products/Fashion/Accessories/12.Xiaomimiband2.png",
-      "/assets/images/products/Fashion/Accessories/12.Xiaomimiband2.png",
+      "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
+      "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
     ],
     categories: ["fashion"],
     status: null,
@@ -5173,7 +5169,7 @@ export default [
   },
   {
     id: "5c4aba23-5fd5-47c1-9615-7ff9336b8e42",
-    slug: "kossil-watch-brown",
+    slug: "Nike-red",
     shop: {
       id: "acfa0595-3e11-4afc-a3e4-c59ddafe5ea5",
       slug: "scarlett-beauty",
@@ -5224,7 +5220,7 @@ export default [
   },
   {
     id: "fb58d750-7818-4f75-822a-c2e524f260b0",
-    slug: "mvmtm-watch-black",
+    slug: "North-star-cream",
     shop: {
       id: "32040dd2-ea90-4bc0-94d5-2291b9b11208",
       slug: "keyboard-kiosk",
@@ -5256,17 +5252,17 @@ export default [
         instagram: null,
       },
     },
-    title: "MVMTM Watch Black",
+    title: "North Star Cream",
     brand: null,
     price: 246,
     size: null,
     colors: [],
     discount: 0,
     thumbnail:
-      "/assets/images/products/Fashion/Accessories/14.MVMTMWatchBlack.png",
+    "/assets/images/products/Fashion/Shoes/2.NorthStarCream.png",
     images: [
-      "/assets/images/products/Fashion/Accessories/14.MVMTMWatchBlack.png",
-      "/assets/images/products/Fashion/Accessories/14.MVMTMWatchBlack.png",
+      "/assets/images/products/Fashion/Shoes/2.NorthStarCream.png",
+      "/assets/images/products/Fashion/Shoes/2.NorthStarCream.png",
     ],
     categories: ["fashion"],
     status: null,
@@ -5276,7 +5272,7 @@ export default [
   },
   {
     id: "cab6d623-43ef-4cae-9833-3873759e38ac",
-    slug: "xarioho-watch-black",
+    slug: "Nike-fluffy-yellow",
     shop: {
       id: "9eecf921-25ca-4d1b-a1c4-f232371a176c",
       slug: "word-wide-wishes",
@@ -5308,17 +5304,17 @@ export default [
         instagram: null,
       },
     },
-    title: "Xarioho Watch Black",
+    title: "Nike Fluffy Yellow",
     brand: null,
     price: 87,
     size: null,
     colors: [],
     discount: 0,
     thumbnail:
-      "/assets/images/products/Fashion/Accessories/15.BarihoWatchBlack.png",
+    "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
     images: [
-      "/assets/images/products/Fashion/Accessories/15.BarihoWatchBlack.png",
-      "/assets/images/products/Fashion/Accessories/15.BarihoWatchBlack.png",
+      "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
+      "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
     ],
     categories: ["fashion"],
     status: null,
