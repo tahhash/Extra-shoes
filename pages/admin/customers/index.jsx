@@ -66,13 +66,13 @@ export default function CustomerList({ customers }) {
   });
   return (
     <Box py={4}>
-      <H3 mb={2}>زبون</H3>
+      <H3 mb={2}>الزبائن</H3>
 
       <SearchArea
         handleSearch={() => {}}
         buttonText="إضافة زبون"
         handleBtnClick={() => {}}
-        searchPlaceholder="Search Customer..."
+        searchPlaceholder="بحث عن زبون ..."
       />
 
       <Card>
