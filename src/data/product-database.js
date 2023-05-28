@@ -4914,7 +4914,7 @@ export default [
   },
   {
     id: "1b017e60-3ca4-4186-858e-5e9b1b892aa6",
-    slug: "say-ban-matt-black",
+    slug: "North-star-cream",
     shop: {
       id: "9eecf921-25ca-4d1b-a1c4-f232371a176c",
       slug: "word-wide-wishes",
@@ -5156,10 +5156,11 @@ export default [
     size: null,
     colors: [],
     discount: 0,
-    thumbnail: "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
+    thumbnail:
+    "/assets/images/products/Fashion/Shoes/4.NikeFluffyYellow.png",
     images: [
-      "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
-      "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
+      "/assets/images/products/Fashion/Shoes/4.NikeFluffyYellow.png",
+      "/assets/images/products/Fashion/Shoes/4.NikeFluffyYellow.png",
     ],
     categories: ["fashion"],
     status: null,
@@ -5311,10 +5312,10 @@ export default [
     colors: [],
     discount: 0,
     thumbnail:
-    "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
+    "/assets/images/products/Fashion/Shoes/4.NikeFluffyYellow.png",
     images: [
-      "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
-      "/assets/images/products/Fashion/Shoes/3.NikeFluffyYellow.png",
+      "/assets/images/products/Fashion/Shoes/4.NikeFluffyYellow.png",
+      "/assets/images/products/Fashion/Shoes/4.NikeFluffyYellow.png",
     ],
     categories: ["fashion"],
     status: null,
