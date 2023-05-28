@@ -224,23 +224,6 @@ const navbarNavigations = [
           },
         ],
       },
-      {
-        title: "تذاكر الدعم",
-        child: [
-          {
-            title: "جميع التذاكر",
-            url: "/support-tickets",
-          },
-          {
-            title: "تفاصيل التذكرة",
-            url: "/support-tickets/when-will-my-product-arrive",
-          },
-        ],
-      },
-      {
-        title: "المفضلة",
-        url: "/wish-list",
-      },
     ],
   },
   {
