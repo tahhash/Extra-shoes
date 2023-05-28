@@ -91,7 +91,7 @@ const SearchInputWithCategory = () => {
       <TextField
         fullWidth
         variant="outlined"
-        placeholder="Searching for..."
+        placeholder="البحث عن..."
         onChange={handleSearch}
         InputProps={{
           sx: {

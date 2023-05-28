@@ -48,7 +48,7 @@ export const navigations = [
     ],
   },
   {
-    name: "العملاء",
+    name: "الزبائن",
     icon: duotone.Customers,
     path: "/admin/customers",
   },

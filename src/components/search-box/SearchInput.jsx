@@ -36,7 +36,7 @@ const SearchInput = () => {
       <TextField
         fullWidth
         variant="outlined"
-        placeholder="Searching for..."
+        placeholder="البحث عن..."
         onChange={handleSearch}
         InputProps={{
           sx: {
@@ -60,7 +60,7 @@ const SearchInput = () => {
                 borderRadius: "0 300px 300px 0",
               }}
             >
-              Search
+              بحث
             </Button>
           ),
           startAdornment: <SearchOutlinedIcon fontSize="small" />,
