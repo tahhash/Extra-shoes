@@ -39,7 +39,7 @@ const App = (props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <OpenGraphTags />
-        <title>إكسترا: العثور على المقاس المثالي </title>
+        <title>إكسترا</title>
       </Head>
 
       <SettingsProvider>
